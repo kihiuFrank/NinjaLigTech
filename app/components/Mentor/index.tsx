@@ -2,6 +2,7 @@
 import Slider from "react-slick";
 import React, { Component } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 // CAROUSEL DATA
 
@@ -9,38 +10,45 @@ interface DataType {
   profession: string;
   name: string;
   imgSrc: string;
+  linkedIn: string;
 }
 
 const postData: DataType[] = [
   {
-    profession: "Web3 Developer",
+    profession: "CEO NinjaLig / Web3 Developer",
     name: "Frankline Kihiu",
-    imgSrc: "/assets/mentor/user3.png",
+    imgSrc: "/assets/mentor/user01.jpg",
+    linkedIn: "https://www.linkedin.com/in/frankline-m-kihiu/",
+  },
+  {
+    profession: "Senior UX Designer",
+    name: "Shamara Davis",
+    imgSrc: "/assets/mentor/user19.png",
+    linkedIn: "https://www.linkedin.com/in/frankline-m-kihiu/",
+  },
+  {
+    profession: "Data Scientist",
+    name: "Anushka Sharma",
+    imgSrc: "/assets/mentor/user16.png",
+    linkedIn: "https://www.linkedin.com/in/frankline-m-kihiu/",
+  },
+  {
+    profession: "Cyber Security Expert",
+    name: "Anita Shalie",
+    imgSrc: "/assets/mentor/user14.png",
+    linkedIn: "https://www.linkedin.com/in/frankline-m-kihiu/",
   },
   {
     profession: "Senior UX Designer",
     name: "Shoo Thar Mien",
-    imgSrc: "/assets/mentor/user2.png",
+    imgSrc: "/assets/mentor/user20.png",
+    linkedIn: "https://www.linkedin.com/in/frankline-m-kihiu/",
   },
   {
     profession: "Senior UX Designer",
     name: "Shoo Thar Mien",
-    imgSrc: "/assets/mentor/user1.png",
-  },
-  {
-    profession: "Senior UX Designer",
-    name: "Shoo Thar Mien",
-    imgSrc: "/assets/mentor/user3.png",
-  },
-  {
-    profession: "Senior UX Designer",
-    name: "Shoo Thar Mien",
-    imgSrc: "/assets/mentor/user2.png",
-  },
-  {
-    profession: "Senior UX Designer",
-    name: "Shoo Thar Mien",
-    imgSrc: "/assets/mentor/user1.png",
+    imgSrc: "/assets/mentor/user13.jpeg",
+    linkedIn: "https://www.linkedin.com/in/frankline-m-kihiu/",
   },
 ];
 
@@ -160,20 +168,22 @@ export default class MultipleItems extends Component {
                     <Image
                       src={items.imgSrc}
                       alt="user-image"
-                      width={306}
+                      width={200}
                       height={0}
-                      className="inline-block m-auto"
+                      className="w-30 h-30 inline-block m-auto p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
                     />
-                    <div className="absolute right-[84px] bottom-[102px] bg-white rounded-full p-4">
-                      <Image
-                        src={"/assets/mentor/linkedin.svg"}
-                        alt="linkedin-image"
-                        width={25}
-                        height={24}
-                      />
+                    <div className="absolute right-[55px] bottom-[30px] bg-white rounded-full p-4">
+                      <Link href={items.linkedIn}>
+                        <Image
+                          src={"/assets/mentor/linkedin.svg"}
+                          alt="linkedin-image"
+                          width={25}
+                          height={24}
+                        />
+                      </Link>
                     </div>
                   </div>
-                  <div className="-mt-10">
+                  <div className="-mt-30">
                     <h3 className="text-2xl font-semibold text-lightblack">
                       {items.name}
                     </h3>
