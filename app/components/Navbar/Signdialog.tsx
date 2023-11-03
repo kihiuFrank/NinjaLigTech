@@ -1,6 +1,11 @@
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
 import { LockClosedIcon } from "@heroicons/react/20/solid";
+import NextLink from "next/link";
+import { useRouter } from "next/navigation";
+import { FiChevronRight } from "react-icons/fi";
+import { useAuth } from "../../context/AuthContext";
+import { LoginType } from "../../types/AuthTypes";
 
 const Signin = () => {
   let [isOpen, setIsOpen] = useState(false);
@@ -12,6 +17,31 @@ const Signin = () => {
   const openModal = () => {
     setIsOpen(true);
   };
+
+  const [data, setData] = useState<LoginType>({
+    email: "",
+    password: "",
+  });
+
+  // Use the signIn method from the AuthContext
+  const { logIn } = useAuth();
+  const router = useRouter();
+
+  const handleLogin = async (e: any) => {
+    e.preventDefault();
+    try {
+      await logIn(data.email, data.password);
+      router.push("/dashboard");
+    } catch (error: any) {
+      console.log(error.message);
+    }
+  };
+
+  // Destructure data from the data object
+  const { ...allData } = data;
+
+  // Disable submit button until all fields are filled in
+  const canSubmit = [...Object.values(allData)].every(Boolean);
 
   return (
     <>
@@ -84,7 +114,17 @@ const Signin = () => {
                               required
                               className="relative block w-full appearance-none rounded-none rounded-t-md border border-grey500 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
                               placeholder="Email address"
+                              pattern="[a-z0-9._+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                              onChange={(e: any) => {
+                                setData({
+                                  ...data,
+                                  email: e.target.value,
+                                });
+                              }}
                             />
+                            <span className="mt-1 hidden text-sm text-red-400">
+                              Please enter a valid email address.{" "}
+                            </span>
                           </div>
                           <div>
                             <label htmlFor="password" className="sr-only">
@@ -98,7 +138,17 @@ const Signin = () => {
                               required
                               className="relative block w-full appearance-none rounded-none rounded-b-md border border-grey500 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
                               placeholder="Password"
+                              pattern=".{8,}"
+                              onChange={(e: any) => {
+                                setData({
+                                  ...data,
+                                  password: e.target.value,
+                                });
+                              }}
                             />
+                            <span className="mt-1 hidden text-sm text-red-400">
+                              Password must be at least 8 characters.{" "}
+                            </span>
                           </div>
                         </div>
 
@@ -131,6 +181,7 @@ const Signin = () => {
                         <div>
                           <button
                             type="submit"
+                            disabled={!canSubmit}
                             className="group relative flex w-full justify-center rounded-md border border-transparent bg-Blueviolet py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                           >
                             <span className="absolute inset-y-0 left-0 flex items-center pl-3">
