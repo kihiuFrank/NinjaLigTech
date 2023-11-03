@@ -4,8 +4,7 @@ import React, { useState } from "react";
 import { Bars3Icon } from "@heroicons/react/24/outline";
 import Drawer from "./Drawer";
 import Drawerdata from "./Drawerdata";
-import Signdialog from "./Signdialog";
-import Registerdialog from "./Registerdialog";
+import Registerdialog from "./LogOutDialog";
 
 interface NavigationItem {
   name: string;
@@ -17,7 +16,7 @@ const navigation: NavigationItem[] = [
   { name: "Home", href: "#/", current: true },
   { name: "Courses", href: "#courses", current: false },
   { name: "Mentor", href: "#mentor", current: false },
-  { name: "Group", href: "/", current: false },
+  { name: "Group", href: "/home", current: false },
   { name: "Testimonial", href: "#testimonial", current: false },
 ];
 
@@ -99,10 +98,6 @@ const Navbar = () => {
                 </div>
               </div>
             </div>
-
-            {/* SIGNIN DIALOG */}
-
-            <Signdialog />
 
             {/* REGISTER DIALOG */}
 

@@ -1,6 +1,5 @@
 import "./globals.css";
-import Navbar from "./components/Navbar/index";
-import Footer from "./components/Footer/Footer";
+import { AuthContextProvider } from "@/context/AuthContext";
 
 export const metadata = {
   title: "NinjaLig Technologies",
@@ -15,9 +14,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Navbar />
-        {children}
-        <Footer />
+        <AuthContextProvider>{children}</AuthContextProvider>
       </body>
     </html>
   );

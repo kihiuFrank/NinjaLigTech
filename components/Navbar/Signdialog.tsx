@@ -95,7 +95,12 @@ const Signin = () => {
                           Sign in to your account
                         </h2>
                       </div>
-                      <form className="mt-8 space-y-6" action="#" method="POST">
+                      <form
+                        className="mt-8 space-y-6"
+                        onSubmit={handleLogin}
+                        action="#"
+                        method="POST"
+                      >
                         <input
                           type="hidden"
                           name="remember"
