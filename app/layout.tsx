@@ -1,3 +1,4 @@
+import ProtectedRoute from "@/components/ProtectedRoute/ProtectedRoute";
 import "./globals.css";
 import { AuthContextProvider } from "@/context/AuthContext";
 

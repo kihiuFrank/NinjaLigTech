@@ -11,6 +11,7 @@ import {
   TwitterAuthProvider,
 } from "firebase/auth";
 import { auth } from "../config/firebase.config";
+import { useRouter } from "next/navigation";
 
 // User data type interface
 interface UserType {
@@ -52,49 +53,102 @@ export const AuthContextProvider = ({
     return () => unsubscribe();
   }, []);
 
+  const router = useRouter();
+
   // Sign up the user
   const signUp = (email: string, password: string) => {
-    return createUserWithEmailAndPassword(auth, email, password);
+    try {
+      return createUserWithEmailAndPassword(auth, email, password);
+    } catch (error) {
+      console.log("Error registering user", error);
+    }
   };
 
   // Login the user
   const logIn = (email: string, password: string) => {
-    return signInWithEmailAndPassword(auth, email, password);
+    try {
+      return signInWithEmailAndPassword(auth, email, password).then(
+        (result) => {
+          const user = result.user;
+          console.log("User sign In is: ", user);
+
+          if (result) {
+            router.push("/home");
+          }
+        }
+      );
+    } catch (error) {
+      console.log("Error logging in", error);
+    }
   };
 
   // ResetPassword
   const resetPassword = (email: string) => {
-    return sendPasswordResetEmail(auth, email);
+    try {
+      return sendPasswordResetEmail(auth, email);
+    } catch (error) {
+      console.log("Error Resetting Password", error);
+    }
+    router.push("/");
   };
 
   // sign in with google
-  const googleSignIn = () => {
+  const googleSignIn = async () => {
     const provider = new GoogleAuthProvider();
     signInWithPopup(auth, provider)
       .then((result) => {
-        console.log("Logged In", result);
+        // This gives you a Google Access Token. You can use it to access the Google API.
+        //const credential = GoogleAuthProvider.credentialFromResult(result);
+        //const token = credential.accessToken;
+        // The signed-in user info.
+        const user = result.user;
+        console.log("User sign In is: ", user);
+
+        if (result) {
+          router.push("/home");
+        }
+
+        // IdP data available using getAdditionalUserInfo(result)
+        // ...
       })
       .catch((error) => {
-        console.log("Caught error Popup closed", error);
+        console.log("Error logging in user: ", error);
       });
   };
 
   // sign in with twitter
-  const twitterSignIn = () => {
+  const twitterSignIn = async () => {
     const provider = new TwitterAuthProvider();
     signInWithPopup(auth, provider)
       .then((result) => {
-        console.log("Logged In", result);
+        // This gives you a Google Access Token. You can use it to access the Google API.
+        //const credential = GoogleAuthProvider.credentialFromResult(result);
+        //const token = credential.accessToken;
+        // The signed-in user info.
+        const user = result.user;
+        console.log("User sign In is: ", user);
+
+        if (result) {
+          router.push("/home");
+        }
+
+        // IdP data available using getAdditionalUserInfo(result)
+        // ...
       })
       .catch((error) => {
-        console.log("Caught error Popup closed", error);
+        console.log("Error logging in user: ", error);
       });
   };
 
   // Logout the user
   const logOut = async () => {
-    setUser({ email: null, uid: null });
-    return await signOut(auth);
+    try {
+      setUser({ email: null, uid: null });
+      return await signOut(auth);
+    } catch (error) {
+      console.error("Error logging out ", error);
+    }
+    router.push("/");
   };
 
   // Wrap the children with the context provider

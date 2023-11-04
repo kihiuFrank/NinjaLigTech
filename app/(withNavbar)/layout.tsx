@@ -2,6 +2,7 @@ import "../globals.css";
 import Navbar from "../../components/Navbar/index";
 import Footer from "../../components/Footer/Footer";
 import { AuthContextProvider } from "@/context/AuthContext";
+import ProtectedRoute from "@/components/ProtectedRoute/ProtectedRoute";
 
 export const metadata = {
   title: "NinjaLig Technologies",
@@ -14,14 +15,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>
-        <AuthContextProvider>
-          <Navbar />
-          {children}
-          <Footer />
-        </AuthContextProvider>
-      </body>
-    </html>
+    <AuthContextProvider>
+      <ProtectedRoute>
+        <Navbar />
+        {children}
+        <Footer />
+      </ProtectedRoute>
+    </AuthContextProvider>
   );
 }

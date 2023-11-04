@@ -94,6 +94,7 @@ const Banner = () => {
 
           <div className="col-span-6 flex justify-center">
             <Image
+              priority
               src="/assets/banner/mahila.png"
               alt="nothing"
               width={1000}

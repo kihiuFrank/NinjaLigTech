@@ -6,8 +6,9 @@ import { useAuth } from "../../context/AuthContext";
 import { RegistrationType } from "../../types/AuthTypes";
 import { FiChevronLeft } from "react-icons/fi";
 import NextLink from "next/link";
+import Image from "next/image";
 
-const page = () => {
+const Page = () => {
   const [data, setData] = useState<RegistrationType>({
     email: "",
     password: "",
@@ -21,7 +22,7 @@ const page = () => {
     e.preventDefault();
     try {
       await signUp(data.email, data.password);
-      router.push("/login");
+      router.push("/");
     } catch (error: any) {
       console.log(error.message);
     }
@@ -41,7 +42,9 @@ const page = () => {
           href="#"
           className="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white"
         >
-          <img
+          <Image
+            width={100}
+            height={100}
             className="w-auto h-12 mr-0 mx-auto"
             src="/assets/logo/logo.png"
             alt="Your Company"
@@ -160,4 +163,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

@@ -5,6 +5,8 @@ import { Bars3Icon } from "@heroicons/react/24/outline";
 import Drawer from "./Drawer";
 import Drawerdata from "./Drawerdata";
 import Registerdialog from "./LogOutDialog";
+import Image from "next/image";
+import LogOut from "./LogOutDialog";
 
 interface NavigationItem {
   name: string;
@@ -60,12 +62,16 @@ const Navbar = () => {
               {/* LOGO */}
 
               <div className="flex flex-shrink-0 items-center">
-                <img
+                <Image
+                  width={100}
+                  height={100}
                   className="block h-full w-40 lg:hidden"
                   src={"/assets/logo/logo.png"}
                   alt="dsign-logo"
                 />
-                <img
+                <Image
+                  width={100}
+                  height={100}
                   className="hidden h-full w-40 lg:block"
                   src={"/assets/logo/logo.png"}
                   alt="dsign-logo"
@@ -99,9 +105,9 @@ const Navbar = () => {
               </div>
             </div>
 
-            {/* REGISTER DIALOG */}
+            {/* LOGOUT DIALOG */}
 
-            <Registerdialog />
+            <LogOut />
 
             {/* DRAWER FOR MOBILE VIEW */}
 

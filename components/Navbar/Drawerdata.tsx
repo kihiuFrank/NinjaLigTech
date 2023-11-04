@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import LogOut from "./LogOutDialog";
 
 interface NavigationItem {
   name: string;
@@ -8,7 +9,7 @@ interface NavigationItem {
 }
 
 const navigation: NavigationItem[] = [
-  { name: "Home", href: "/", current: true },
+  { name: "Home", href: "/home", current: true },
   { name: "Courses", href: "#courses", current: false },
   { name: "Mentor", href: "#mentor", current: false },
   { name: "Group", href: "#/", current: false },
@@ -41,12 +42,7 @@ const Data = () => {
               </Link>
             ))}
             <div className="mt-4"></div>
-            <button className="bg-white w-full text-Blueviolet border border-semiblueviolet font-medium py-2 px-4 rounded">
-              Log In
-            </button>
-            <button className="bg-semiblueviolet w-full hover:bg-Blueviolet hover:text-white text-Blueviolet font-medium my-2 py-2 px-4 rounded">
-              Sign up
-            </button>
+            <LogOut />
           </div>
         </div>
       </div>

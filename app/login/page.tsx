@@ -6,8 +6,9 @@ import { useRouter } from "next/navigation";
 import { FiChevronRight } from "react-icons/fi";
 import { useAuth } from "../../context/AuthContext";
 import { LoginType } from "../../types/AuthTypes";
+import Image from "next/image";
 
-const Login = () => {
+const Page = () => {
   const [data, setData] = useState<LoginType>({
     email: "",
     password: "",
@@ -17,20 +18,23 @@ const Login = () => {
   const { logIn, googleSignIn, twitterSignIn, resetPassword } = useAuth();
   const router = useRouter();
 
+  const handleNavigate = () => {
+    router.push("/register");
+  };
+
   const handleLogin = async (e: any) => {
     e.preventDefault();
     try {
       await logIn(data.email, data.password);
-      router.push("/home");
     } catch (error: any) {
       console.log(error.message);
     }
   };
 
   const handleGoogleAuth = async (e: any) => {
+    e.preventDefault();
     try {
       await googleSignIn();
-      router.push("/home");
     } catch (error: any) {
       console.log(error.message);
     }
@@ -40,7 +44,6 @@ const Login = () => {
     e.preventDefault();
     try {
       await twitterSignIn();
-      router.push("/home");
     } catch (error: any) {
       console.log(error.message);
     }
@@ -50,7 +53,6 @@ const Login = () => {
     e.preventDefault();
     try {
       await resetPassword();
-      router.push("/");
     } catch (error: any) {
       console.log(error.message);
     }
@@ -69,7 +71,9 @@ const Login = () => {
           href="#"
           className="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white"
         >
-          <img
+          <Image
+            width={100}
+            height={100}
             className="w-auto h-12 mr-0 mx-auto"
             src="/assets/logo/logo.png"
             alt="Your Company"
@@ -283,12 +287,12 @@ const Login = () => {
               </button>
               <p className="text-sm font-light text-gray-500 dark:text-gray-400">
                 Don’t have an account yet?{" "}
-                <a
-                  href="/register"
+                <button
+                  onClick={handleNavigate}
                   className="font-medium text-primary-600 hover:underline dark:text-primary-500"
                 >
                   Sign up
-                </a>
+                </button>
               </p>
             </form>
           </div>
@@ -298,4 +302,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Page;

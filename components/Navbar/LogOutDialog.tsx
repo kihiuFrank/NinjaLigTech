@@ -11,7 +11,6 @@ const LogOut = () => {
     e.preventDefault();
     try {
       await logOut();
-      router.push("/");
     } catch (error: any) {
       console.log(error.message);
     }

@@ -94,6 +94,7 @@ export default class MultipleItems extends Component {
                     alt={item.imgSrc}
                     width={116}
                     height={36}
+                    className="w-auto h-auto"
                   />
                 </div>
               ))}
