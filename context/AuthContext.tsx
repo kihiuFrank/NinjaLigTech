@@ -3,8 +3,12 @@ import React, { createContext, useContext, useEffect, useState } from "react";
 import {
   createUserWithEmailAndPassword,
   onAuthStateChanged,
+  sendPasswordResetEmail,
   signInWithEmailAndPassword,
   signOut,
+  signInWithPopup,
+  GoogleAuthProvider,
+  TwitterAuthProvider,
 } from "firebase/auth";
 import { auth } from "../config/firebase.config";
 
@@ -58,6 +62,35 @@ export const AuthContextProvider = ({
     return signInWithEmailAndPassword(auth, email, password);
   };
 
+  // ResetPassword
+  const resetPassword = (email: string) => {
+    return sendPasswordResetEmail(auth, email);
+  };
+
+  // sign in with google
+  const googleSignIn = () => {
+    const provider = new GoogleAuthProvider();
+    signInWithPopup(auth, provider)
+      .then((result) => {
+        console.log("Logged In", result);
+      })
+      .catch((error) => {
+        console.log("Caught error Popup closed", error);
+      });
+  };
+
+  // sign in with twitter
+  const twitterSignIn = () => {
+    const provider = new TwitterAuthProvider();
+    signInWithPopup(auth, provider)
+      .then((result) => {
+        console.log("Logged In", result);
+      })
+      .catch((error) => {
+        console.log("Caught error Popup closed", error);
+      });
+  };
+
   // Logout the user
   const logOut = async () => {
     setUser({ email: null, uid: null });
@@ -66,7 +99,17 @@ export const AuthContextProvider = ({
 
   // Wrap the children with the context provider
   return (
-    <AuthContext.Provider value={{ user, signUp, logIn, logOut }}>
+    <AuthContext.Provider
+      value={{
+        user,
+        signUp,
+        logIn,
+        logOut,
+        googleSignIn,
+        twitterSignIn,
+        resetPassword,
+      }}
+    >
       {loading ? null : children}
     </AuthContext.Provider>
   );
