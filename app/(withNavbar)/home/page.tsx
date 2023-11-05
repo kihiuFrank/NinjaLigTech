@@ -7,15 +7,13 @@ import Newsletter from "../../../components/Newsletter/Newsletter";
 
 export default function page() {
   return (
-    
-      <main>
-        <Banner />
-        <Companies />
-        <Courses />
-        <Mentor />
-        <Testimonials />
-        <Newsletter />
-      </main>
-  
+    <main>
+      <Banner />
+      <Companies />
+      <Courses />
+      <Mentor />
+      <Testimonials />
+      <Newsletter />
+    </main>
   );
 }
