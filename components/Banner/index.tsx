@@ -21,10 +21,17 @@ const Banner = () => {
               Taking care of all your engineering needs.
             </h1>
             <h2 className="text-charcoal text-lg font-normal text-center lg:text-start opacity-75 pt-5 lg:pt-0">
-              We have the best Software Developers and consultants ready to
-              build solutions for your business.
+              Hire the best Software Developers and consultants ready to build
+              solutions for your business.
             </h2>
-            <h3 className="text-charcoal text-lg font-normal text-center lg:text-start opacity-75 pt-5 lg:pt-0">
+
+            <div className="relative flex py-5 items-center">
+              <div className="flex-grow border-t border-gray-400"></div>
+              <span className="flex-shrink mx-4 text-gray-400">Or</span>
+              <div className="flex-grow border-t border-gray-400"></div>
+            </div>
+
+            <h3 className="text-charcoal text-lg font-normal text-center lg:text-start opacity-75 pt-0 lg:pt-0">
               Build skills with our courses and mentors from world-class
               companies.
             </h3>
