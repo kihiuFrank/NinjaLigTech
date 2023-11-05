@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import LogOut from "./LogOutDialog";
+import { useAuth } from "@/context/AuthContext";
 
 interface NavigationItem {
   name: string;
@@ -21,6 +21,18 @@ function classNames(...classes: string[]) {
 }
 
 const Data = () => {
+  // Use the Logout method from the AuthContext
+  const { logOut } = useAuth();
+
+  const handleLogOut = async (e: any) => {
+    e.preventDefault();
+    try {
+      await logOut();
+    } catch (error: any) {
+      console.log(error.message);
+    }
+    console.log("User Logged Out!");
+  };
   return (
     <div className="rounded-md max-w-sm w-full mx-auto">
       <div className="flex-1 space-y-4 py-1">
@@ -42,7 +54,12 @@ const Data = () => {
               </Link>
             ))}
             <div className="mt-4"></div>
-            <LogOut />
+            <button
+              onClick={handleLogOut}
+              className="bg-semiblueviolet w-full hover:bg-Blueviolet hover:text-white text-Blueviolet font-medium my-2 py-2 px-4 rounded"
+            >
+              Log Out
+            </button>
           </div>
         </div>
       </div>

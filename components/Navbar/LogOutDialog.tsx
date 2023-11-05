@@ -3,7 +3,7 @@ import { useRouter } from "next/navigation";
 import { useAuth } from "../../context/AuthContext";
 
 const LogOut = () => {
-  // Use the signUp method from the AuthContext
+  // Use the Logout method from the AuthContext
   const { logOut } = useAuth();
   const router = useRouter();
 
