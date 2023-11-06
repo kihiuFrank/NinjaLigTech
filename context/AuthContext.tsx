@@ -35,6 +35,8 @@ export const AuthContextProvider = ({
   const [user, setUser] = useState<UserType>({ email: null, uid: null });
   const [loading, setLoading] = useState<Boolean>(true);
 
+  const router = useRouter();
+
   // Update the state depending on auth
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
@@ -43,8 +45,10 @@ export const AuthContextProvider = ({
           email: user.email,
           uid: user.uid,
         });
+        router.push("/home");
       } else {
         setUser({ email: null, uid: null });
+        router.push("/login");
       }
     });
 
@@ -52,8 +56,6 @@ export const AuthContextProvider = ({
 
     return () => unsubscribe();
   }, []);
-
-  const router = useRouter();
 
   // Sign up the user
   const signUp = (email: string, password: string) => {
