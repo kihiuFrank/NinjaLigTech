@@ -32,8 +32,16 @@ const Banner = () => {
             </div>
 
             <h3 className="text-charcoal text-lg font-normal text-center lg:text-start opacity-75 pt-0 lg:pt-0">
-              Build skills with our courses and mentors from world-class
-              companies.
+              Join our gaming community and compete for cash prizes. We hold
+              tournaments for different types of games twice every week. For
+              more info, join our{" "}
+              <a
+                className="text-kellygreen text-sm font-semibold text-center lg:text-start"
+                href="https://chat.whatsapp.com/FQhWtNuwHll2bcSvO1ciJL"
+              >
+                Whatsapp Community.
+              </a>
+              .
             </h3>
 
             <div className="relative text-white focus-within:text-white flex flex-row-reverse input-shadow rounded-full pt-5 lg:pt-0">

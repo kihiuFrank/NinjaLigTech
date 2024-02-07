@@ -12,8 +12,8 @@ interface DataType {
   heading2: string;
   imgSrc: string;
   name: string;
-  students: number;
-  classes: number;
+  gamers: number;
+  divisions: number;
   price: number;
   rating: number;
   purchaseBol: string;
@@ -22,76 +22,64 @@ interface DataType {
 
 const postData: DataType[] = [
   {
-    heading: "Full stack modern",
-    heading2: "javascript",
-    name: "Colt stelle",
-    imgSrc: "/assets/courses/courseone.png",
-    students: 150,
-    classes: 12,
-    price: 20,
+    heading: "DREAM LEAGUE SOCCER",
+    heading2: "DLS24",
+    name: "",
+    imgSrc: "/assets/games/dls24.png",
+    gamers: 150,
+    divisions: 5,
+    price: 100,
     rating: 4.7,
-    purchaseBol: "Free",
-    purchaseBol2: "Course",
+    purchaseBol: "Subscription ",
+    purchaseBol2: "Fee",
   },
   {
-    heading: "Design system",
-    heading2: "with React programme",
-    name: "Colt stelle",
-    imgSrc: "/assets/courses/coursetwo.png",
-    students: 130,
-    classes: 12,
-    price: 20,
+    heading: "CALL OF DUTY",
+    heading2: "MOBILE",
+    name: "",
+    imgSrc: "/assets/games/cod.png",
+    gamers: 150,
+    divisions: 0,
+    price: 100,
     rating: 4.7,
-    purchaseBol: "Top",
-    purchaseBol2: "Seller",
+    purchaseBol: "Subscription ",
+    purchaseBol2: "Fee",
   },
   {
-    heading: "Design banner",
-    heading2: "with Figma",
-    name: "Colt stelle",
-    imgSrc: "/assets/courses/coursethree.png",
-    students: 120,
-    classes: 12,
-    price: 20,
+    heading: "EA SPORTS SOCCER",
+    heading2: "FC MOBILE",
+    name: "",
+    imgSrc: "/assets/games/fcMobile.png",
+    gamers: 150,
+    divisions: 5,
+    price: 100,
     rating: 4.7,
-    purchaseBol: "Sponsored",
-    purchaseBol2: "Course",
+    purchaseBol: "Subscription ",
+    purchaseBol2: "Fee",
   },
   {
-    heading: "We Launch Delia",
-    heading2: "Webflow this Week!",
-    name: "Colt stelle",
-    imgSrc: "/assets/courses/courseone.png",
-    students: 150,
-    classes: 12,
-    price: 20,
+    heading: "eFOOTBALL 2024",
+    heading2: "KONAMI",
+    name: "",
+    imgSrc: "/assets/games/efootball.png",
+    gamers: 150,
+    divisions: 5,
+    price: 100,
     rating: 4.7,
-    purchaseBol: "Free",
-    purchaseBol2: "Course",
+    purchaseBol: "Subscription ",
+    purchaseBol2: "Fee",
   },
   {
-    heading: "We Launch Delia",
-    heading2: "Webflow this Week!",
-    name: "Colt stelle",
-    imgSrc: "/assets/courses/coursetwo.png",
-    students: 150,
-    classes: 12,
-    price: 20,
+    heading: "PUBG",
+    heading2: "MOBILE",
+    name: "",
+    imgSrc: "/assets/games/pubg.png",
+    gamers: 150,
+    divisions: 0,
+    price: 100,
     rating: 4.7,
-    purchaseBol: "Top",
-    purchaseBol2: "Seller",
-  },
-  {
-    heading: "We Launch Delia",
-    heading2: "Webflow this Week!",
-    name: "Colt stelle",
-    imgSrc: "/assets/courses/coursethree.png",
-    students: 150,
-    classes: 12,
-    price: 20,
-    rating: 4.7,
-    purchaseBol: "Free",
-    purchaseBol2: "Course",
+    purchaseBol: "Subscription ",
+    purchaseBol2: "Fee",
   },
 ];
 
@@ -132,17 +120,17 @@ export default class MultipleItems extends Component {
     };
 
     return (
-      <div id="courses">
+      <div id="games">
         <div className="mx-auto max-w-7xl sm:py-8 px-4 lg:px-8 ">
           <div className="sm:flex justify-between items-center">
             <h3 className="text-midnightblue text-4xl lg:text-55xl font-semibold mb-5 sm:mb-0">
-              Popular courses.
+              Popular Games.
             </h3>
             <Link
               href={"/"}
               className="text-Blueviolet text-lg font-medium space-links"
             >
-              Explore courses&nbsp;&gt;&nbsp;
+              Explore games&nbsp;&gt;&nbsp;
             </Link>
           </div>
 
@@ -156,9 +144,9 @@ export default class MultipleItems extends Component {
                       alt="gaby"
                       width={389}
                       height={262}
-                      className="m-auto clipPath"
+                      className="m-auto rounded-2xl clipPath"
                     />
-                    <div className="absolute right-5 -bottom-2 bg-ultramarine rounded-full p-6">
+                    <div className="absolute right-5 -bottom-2 bg-ultramarine rounded-full p-2">
                       <h3 className="text-white uppercase text-center text-sm font-medium">
                         {items.purchaseBol} <br /> {items.purchaseBol2}
                       </h3>
@@ -193,7 +181,9 @@ export default class MultipleItems extends Component {
                         </div>
                       </div>
                       <div>
-                        <h3 className="text-3xl font-medium">${items.price}</h3>
+                        <h3 className="text-2xl font-medium">
+                          Ksh: {items.price}
+                        </h3>
                       </div>
                     </div>
 
@@ -209,7 +199,7 @@ export default class MultipleItems extends Component {
                           className="inline-block m-auto"
                         />
                         <h3 className="text-base font-medium text-black opacity-75">
-                          {items.classes} classes
+                          {items.divisions} divisions
                         </h3>
                       </div>
                       <div className="flex gap-4">
@@ -221,7 +211,7 @@ export default class MultipleItems extends Component {
                           className="inline-block m-auto"
                         />
                         <h3 className="text-base font-medium text-black opacity-75">
-                          {items.students} students
+                          {items.gamers}+ gamers
                         </h3>
                       </div>
                     </div>
