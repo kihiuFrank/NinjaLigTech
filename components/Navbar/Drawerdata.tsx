@@ -56,18 +56,24 @@ const Data = () => {
       <div className="flex-1 space-y-4 py-1">
         <div className="sm:block">
           <div className="space-y-1 px-5 pt-2 pb-3">
-            <button
-              className="flex items-center text-md  my-8 font-medium text-gray-900 rounded-full hover:text-blue-600 dark:hover:text-blue-500 md:me-0 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:text-white"
-              type="button"
-            >
-              <span className="sr-only">Open user menu</span>
-              <img
-                className="w-16 h-16 me-2 rounded-full"
-                src={user.photoURL}
-                alt="user photo"
-              />
-              {user.displayName}
-            </button>
+            {user.uid != null ? (
+              <>
+                <button
+                  className="flex items-center text-md  my-8 font-medium text-gray-900 rounded-full hover:text-blue-600 dark:hover:text-blue-500 md:me-0 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:text-white"
+                  type="button"
+                >
+                  <span className="sr-only">Open user menu</span>
+                  <img
+                    className="w-16 h-16 me-2 rounded-full"
+                    src={user.photoURL}
+                    alt="user photo"
+                  />
+                  {user.displayName}
+                </button>
+              </>
+            ) : (
+              <></>
+            )}
 
             {navigation.map((item) => (
               <Link
