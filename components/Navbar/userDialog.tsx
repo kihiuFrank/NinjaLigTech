@@ -19,12 +19,14 @@ const UserDialog = () => {
 
   return (
     <div className="absolute inset-y-0 right-0 flex items-center sm:static sm:inset-auto">
-      <div className="hidden lg:block ">
+      <div
+        className="hidden lg:block "
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
         <button
           className="flex items-center text-sm pe-1 font-medium text-gray-900 rounded-full hover:text-blue-600 dark:hover:text-blue-500 md:me-0 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:text-white"
           type="button"
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
         >
           <span className="sr-only">Open user menu</span>
           <img
