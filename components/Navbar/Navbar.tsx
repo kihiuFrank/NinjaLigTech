@@ -1,12 +1,14 @@
+"use client";
 import { Disclosure } from "@headlessui/react";
 import Link from "next/link";
 import React, { useState } from "react";
 import { Bars3Icon } from "@heroicons/react/24/outline";
 import Drawer from "./Drawer";
 import Drawerdata from "./Drawerdata";
-import Registerdialog from "./LogOutDialog";
+import SignInDialog from "./SignInDialog";
 import Image from "next/image";
-import LogOut from "./LogOutDialog";
+import LogOutDialog from "./userDialog";
+import { useAuth } from "@/context/AuthContext";
 
 interface NavigationItem {
   name: string;
@@ -15,7 +17,7 @@ interface NavigationItem {
 }
 
 const navigation: NavigationItem[] = [
-  { name: "Home", href: "#/", current: true },
+  { name: "Home", href: "/", current: true },
   { name: "Mentor", href: "#mentor", current: false },
   { name: "Group", href: "/home", current: false },
   { name: "Testimonial", href: "#testimonial", current: false },
@@ -52,6 +54,8 @@ const Navbar = () => {
   const handleLinkClick = (href: string) => {
     setCurrentLink(href);
   };
+
+  const { user } = useAuth();
 
   return (
     <Disclosure as="nav" className="navbar">
@@ -105,9 +109,9 @@ const Navbar = () => {
               </div>
             </div>
 
-            {/* LOGOUT DIALOG */}
+            {/* AUTHENTICATION DIALOG */}
 
-            <LogOut />
+            {user.uid != null ? <LogOutDialog /> : <SignInDialog />}
 
             {/* DRAWER FOR MOBILE VIEW */}
 

@@ -16,11 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <AuthContextProvider>
-      <ProtectedRoute>
-        <Navbar />
-        {children}
-        <Footer />
-      </ProtectedRoute>
+      <>{children}</>
     </AuthContextProvider>
   );
 }

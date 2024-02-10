@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Banner = () => {
   return (
-    <div id="home-section" className="bg-lightkblue">
+    <div id="home-section" className="bg-lightkblue pt-20 ">
       <div className="mx-auto max-w-7xl pt-20 sm:pb-24 px-6">
         <div className="grid grid-cols-1 lg:grid-cols-12 space-x-1">
           <div className="col-span-6 flex flex-col justify-evenly">
@@ -41,18 +41,17 @@ const Banner = () => {
               >
                 Whatsapp Community.
               </a>
-              .
             </h3>
 
-            <div className="relative text-white focus-within:text-white flex flex-row-reverse input-shadow rounded-full pt-5 lg:pt-0">
+            <div className="relative text-white focus-within:text-white flex flex-row-reverse input-shadow rounded-full pt-16 lg:pt-8">
               <input
                 type="Email address"
                 name="q"
                 className="py-6 lg:py-8 text-lg w-full text-black opacity-75 rounded-full pl-8 focus:outline-none focus:text-black"
-                placeholder="search courses..."
+                placeholder="search..."
                 autoComplete="off"
               />
-              <div className="absolute inset-y-0 right-0 flex items-center pr-2 pt-5 lg:pt-0">
+              <div className="absolute inset-y-0 right-0 flex items-center pr-2 pt-16 lg:pt-8">
                 <button
                   type="submit"
                   className="p-3 lg:p-5 focus:outline-none focus:shadow-outline bg-ultramarine hover:bg-midnightblue duration-150 ease-in-out rounded-full"
@@ -67,8 +66,8 @@ const Banner = () => {
               </div>
             </div>
 
-            <div className="flex items-center justify-between pt-10 lg:pt-4">
-              <div className="flex gap-2">
+            <div className="flex items-center justify-between gap-4 pt-16 lg:pt-8">
+              <div className="flex gap-1 ">
                 <Image
                   src="/assets/banner/check-circle.svg"
                   alt="check-image"
@@ -80,7 +79,7 @@ const Banner = () => {
                   Hire Developers
                 </p>
               </div>
-              <div className="flex gap-2">
+              <div className="flex gap-1 ">
                 <Image
                   src="/assets/banner/check-circle.svg"
                   alt="check-image"
@@ -89,10 +88,10 @@ const Banner = () => {
                   className="smallImage"
                 />
                 <p className="text-sm sm:text-lg font-normal text-black">
-                  Enroll for Classes
+                  Subscribe for Gaming Tournaments
                 </p>
               </div>
-              <div className="flex gap-2">
+              <div className="flex gap-1">
                 <Image
                   src="/assets/banner/check-circle.svg"
                   alt="check-image"
@@ -101,7 +100,7 @@ const Banner = () => {
                   className="smallImage"
                 />
                 <p className="text-sm sm:text-lg font-normal text-black">
-                  Community
+                  Join Ninja Community
                 </p>
               </div>
             </div>

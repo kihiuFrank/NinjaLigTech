@@ -1,8 +1,8 @@
-import Login from "@/app/login/page";
+import Landing from "@/app/home/page";
 export default function Home() {
   return (
     <main>
-      <Login />
+      <Landing />
     </main>
   );
 }

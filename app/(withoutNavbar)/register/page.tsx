@@ -2,8 +2,8 @@
 import React, { useState } from "react";
 import { LockClosedIcon } from "@heroicons/react/20/solid";
 import { useRouter } from "next/navigation";
-import { useAuth } from "../../context/AuthContext";
-import { RegistrationType } from "../../types/AuthTypes";
+import { useAuth } from "../../../context/AuthContext";
+import { RegistrationType } from "../../../types/AuthTypes";
 import { FiChevronLeft } from "react-icons/fi";
 import NextLink from "next/link";
 import Image from "next/image";
@@ -149,7 +149,7 @@ const Page = () => {
               <p className="text-sm font-light text-gray-500 dark:text-gray-400">
                 Login Instead?{" "}
                 <a
-                  href="/"
+                  href="/login"
                   className="font-medium text-primary-600 hover:underline dark:text-primary-500"
                 >
                   Login

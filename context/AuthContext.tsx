@@ -17,6 +17,8 @@ import { useRouter } from "next/navigation";
 interface UserType {
   email: string | null;
   uid: string | null;
+  displayName: string | null;
+  photoURL: string | null;
 }
 
 // Create auth context
@@ -32,7 +34,12 @@ export const AuthContextProvider = ({
   children: React.ReactNode;
 }) => {
   // Define the constants for the user and loading state
-  const [user, setUser] = useState<UserType>({ email: null, uid: null });
+  const [user, setUser] = useState<UserType>({
+    email: null,
+    uid: null,
+    displayName: null,
+    photoURL: null,
+  });
   const [loading, setLoading] = useState<Boolean>(true);
 
   const router = useRouter();
@@ -44,11 +51,13 @@ export const AuthContextProvider = ({
         setUser({
           email: user.email,
           uid: user.uid,
+          displayName: user.displayName,
+          photoURL: user.photoURL,
         });
         router.push("/home");
       } else {
-        setUser({ email: null, uid: null });
-        router.push("/login");
+        setUser({ email: null, uid: null, displayName: null, photoURL: null });
+        //router.push("/");
       }
     });
 
@@ -145,8 +154,9 @@ export const AuthContextProvider = ({
   // Logout the user
   const logOut = async () => {
     try {
-      setUser({ email: null, uid: null });
+      setUser({ email: null, uid: null, displayName: null, photoURL: null });
       return await signOut(auth);
+      console.log("Logged out successfully.");
     } catch (error) {
       console.error("Error logging out ", error);
     }

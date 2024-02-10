@@ -4,8 +4,8 @@ import { LockClosedIcon } from "@heroicons/react/20/solid";
 import NextLink from "next/link";
 import { useRouter } from "next/navigation";
 import { FiChevronRight } from "react-icons/fi";
-import { useAuth } from "../../context/AuthContext";
-import { LoginType } from "../../types/AuthTypes";
+import { useAuth } from "../../../context/AuthContext";
+import { LoginType } from "../../../types/AuthTypes";
 import Image from "next/image";
 
 const Page = () => {
