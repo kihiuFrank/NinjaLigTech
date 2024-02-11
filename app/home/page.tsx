@@ -9,7 +9,7 @@ export default function page() {
   return (
     <main>
       <Banner />
-      <Companies />
+      {/* <Companies /> */}
       <Games />
       <Mentor />
       <Testimonials />

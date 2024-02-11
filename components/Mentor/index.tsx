@@ -15,41 +15,41 @@ interface DataType {
 
 const postData: DataType[] = [
   {
-    profession: "CEO NinjaLig / Web3 Developer",
+    profession: `CEO`,
     name: "Frankline Kihiu",
-    imgSrc: "/assets/mentor/user01.jpg",
+    imgSrc: "/assets/mentor/ceo.jpeg",
     linkedIn: "https://www.linkedin.com/in/frankline-m-kihiu/",
   },
   {
-    profession: "Senior UX Designer",
-    name: "Shamara Davis",
-    imgSrc: "/assets/mentor/user19.png",
-    linkedIn: "https://www.linkedin.com/in/frankline-m-kihiu/",
+    profession: "Gaming Director",
+    name: "Paul Gitonga",
+    imgSrc: "/assets/mentor/director.jpeg",
+    linkedIn: "https://www.linkedin.com/in/paul-kihiu-8033482b0/",
   },
   {
-    profession: "Data Scientist",
-    name: "Anushka Sharma",
-    imgSrc: "/assets/mentor/user16.png",
-    linkedIn: "https://www.linkedin.com/in/frankline-m-kihiu/",
+    profession: "COO",
+    name: "Lawrence Githinji",
+    imgSrc: "/assets/mentor/coo.jpeg",
+    linkedIn: "",
   },
-  {
-    profession: "Cyber Security Expert",
-    name: "Anita Shalie",
-    imgSrc: "/assets/mentor/user14.png",
-    linkedIn: "https://www.linkedin.com/in/frankline-m-kihiu/",
-  },
-  {
-    profession: "Senior UX Designer",
-    name: "Shoo Thar Mien",
-    imgSrc: "/assets/mentor/user20.png",
-    linkedIn: "https://www.linkedin.com/in/frankline-m-kihiu/",
-  },
-  {
-    profession: "Senior UX Designer",
-    name: "Shoo Thar Mien",
-    imgSrc: "/assets/mentor/user13.jpeg",
-    linkedIn: "https://www.linkedin.com/in/frankline-m-kihiu/",
-  },
+  // {
+  //   profession: "Cyber Security Expert",
+  //   name: "Anita Shalie",
+  //   imgSrc: "/assets/mentor/user14.png",
+  //   linkedIn: "https://www.linkedin.com/in/frankline-m-kihiu/",
+  // },
+  // {
+  //   profession: "Senior UX Designer",
+  //   name: "Shoo Thar Mien",
+  //   imgSrc: "/assets/mentor/user20.png",
+  //   linkedIn: "https://www.linkedin.com/in/frankline-m-kihiu/",
+  // },
+  // {
+  //   profession: "Senior UX Designer",
+  //   name: "Shoo Thar Mien",
+  //   imgSrc: "/assets/mentor/user13.jpeg",
+  //   linkedIn: "https://www.linkedin.com/in/frankline-m-kihiu/",
+  // },
 ];
 
 // CAROUSEL SETTINGS
@@ -154,10 +154,10 @@ export default class MultipleItems extends Component {
     };
 
     return (
-      <div className="py-10 sm:py-24 bg-paleblue" id="mentor">
+      <div className="py-10 sm:py-24 bg-paleblue" id="team">
         <div className="mx-auto max-w-2xl lg:max-w-7xl sm:py-4 px-4 lg:px-8 relative">
           <h2 className="lh-82 text-midnightblue text-4xl md:text-55xl text-center md:text-start font-semibold">
-            Meet with our <br /> mentors.
+            Meet our team.
           </h2>
 
           <Slider {...settings}>
