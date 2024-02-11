@@ -12,8 +12,8 @@ export default function page() {
       {/* <Companies /> */}
       <Games />
       <Mentor />
-      <Testimonials />
-      <Newsletter />
+      {/* <Testimonials />
+      <Newsletter /> */}
     </main>
   );
 }

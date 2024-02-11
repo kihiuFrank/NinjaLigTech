@@ -119,7 +119,8 @@ const footer = () => {
 
       <div className="py-10 md:flex items-center justify-between border-t border-t-gray-blue">
         <h4 className="text-dark-red opacity-75 text-sm text-center md:text-start font-normal">
-          @2023. NinjaLig Technologies. All rights reserved
+          Copyright © {new Date().getFullYear()}. NinjaLig Technologies. All
+          rights reserved
         </h4>
         <div className="flex gap-5 mt-5 md:mt-0 justify-center md:justify-start">
           <h4 className="text-dark-red opacity-75 text-sm font-normal">
