@@ -72,8 +72,8 @@ const footer = () => {
           </div>
           <h3 className="text-xs font-medium text-gunmetalgray lh-160 mt-5 mb-4 lg:mb-16">
             {" "}
-            Open an account in minutes, get full financial <br /> control for
-            much longer.
+            We Provides Custom Software Development Solutions <br /> that sort
+            your business needs.
           </h3>
           <div className="flex gap-4">
             {socialLinks.map((items, i) => (

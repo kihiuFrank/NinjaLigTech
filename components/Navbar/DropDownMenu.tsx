@@ -17,11 +17,11 @@ const DropDownMenu = () => {
     console.log("User Logged Out!");
   };
   return (
-    <div className="flex items-center justify-center pt-80">
+    <div className="flex items-center justify-center dropDownMenu absolute ">
       {/* Dropdown menu  */}
       <div
         id="dropdownAvatar"
-        className="z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+        className="z-10 bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600"
       >
         <div className="px-4 py-3 text-sm text-gray-900 dark:text-white">
           <div>{user.displayName}</div>
