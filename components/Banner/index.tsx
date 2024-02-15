@@ -65,8 +65,8 @@ const Banner = () => {
               </div>
             </div>
 
-            <div className="flex items-center justify-between gap-4 pt-16 lg:pt-8">
-              <div className="flex gap-1 ">
+            <div className="flex items-center justify-between grid-cols-3 pt-16 lg:pt-8">
+              <div className="flex  ">
                 <Image
                   src="/assets/banner/check-circle.svg"
                   alt="check-image"
@@ -74,11 +74,11 @@ const Banner = () => {
                   height={30}
                   className="smallImage"
                 />
-                <p className="text-sm sm:text-lg font-normal text-black">
+                <p className="text-[11px] sm:text-lg font-normal text-black">
                   Hire Developers
                 </p>
               </div>
-              <div className="flex gap-1 ">
+              <div className="flex ">
                 <Image
                   src="/assets/banner/check-circle.svg"
                   alt="check-image"
@@ -86,11 +86,11 @@ const Banner = () => {
                   height={30}
                   className="smallImage"
                 />
-                <p className="text-sm sm:text-lg font-normal text-black">
-                  Subscribe for Gaming Tournaments
+                <p className="text-[11px] sm:text-lg font-normal text-black">
+                  Gaming Tournaments
                 </p>
               </div>
-              <div className="flex gap-1">
+              <div className="flex ">
                 <Image
                   src="/assets/banner/check-circle.svg"
                   alt="check-image"
@@ -98,14 +98,14 @@ const Banner = () => {
                   height={30}
                   className="smallImage"
                 />
-                <p className="text-sm sm:text-lg font-normal text-black">
-                  Join Ninja Community
+                <p className="text-[11px] sm:text-lg font-normal text-black">
+                  Community
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="col-span-6 flex justify-center">
+          <div className="col-span-6 p-4 sm:p-10 flex justify-center">
             <Image
               priority
               src="/assets/banner/mahila.png"

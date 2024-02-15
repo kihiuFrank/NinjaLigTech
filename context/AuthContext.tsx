@@ -54,7 +54,7 @@ export const AuthContextProvider = ({
           displayName: user.displayName,
           photoURL: user.photoURL,
         });
-        router.push("/home");
+        router.push("/");
       } else {
         setUser({ email: null, uid: null, displayName: null, photoURL: null });
         //router.push("/");
@@ -84,7 +84,7 @@ export const AuthContextProvider = ({
           console.log("User sign In is: ", user);
 
           if (result) {
-            router.push("/home");
+            router.push("/");
           }
         }
       );
@@ -116,7 +116,7 @@ export const AuthContextProvider = ({
         console.log("User sign In is: ", user);
 
         if (result) {
-          router.push("/home");
+          router.push("/");
         }
 
         // IdP data available using getAdditionalUserInfo(result)
@@ -140,7 +140,7 @@ export const AuthContextProvider = ({
         console.log("User sign In is: ", user);
 
         if (result) {
-          router.push("/home");
+          router.push("/");
         }
 
         // IdP data available using getAdditionalUserInfo(result)

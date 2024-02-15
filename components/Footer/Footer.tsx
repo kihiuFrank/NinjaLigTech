@@ -40,24 +40,18 @@ const products: ProductType[] = [
   {
     id: 2,
     section: "Contact",
-    link: ["Help/FAQ", "Press", "Affiliates", "Hotel owners", "Partners"],
+    link: ["Help/FAQ", "Affiliates", "Partners"],
   },
   {
     id: 3,
     section: "More",
-    link: [
-      "Airline fees",
-      "Airlines",
-      "Low fare tips",
-      "Badges &",
-      "Certificates",
-    ],
+    link: ["Fees", "Technical Solutions &", "Gaming"],
   },
 ];
 
 const footer = () => {
   return (
-    <div className="mx-auto max-w-2xl sm:pt-24 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+    <div className="mx-auto max-w-2xl sm:pt-12 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
       <div className="my-12 grid grid-cols-1 gap-y-10 sm:grid-cols-6 lg:grid-cols-12">
         {/* COLUMN-1 */}
 
