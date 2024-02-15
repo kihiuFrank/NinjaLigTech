@@ -156,7 +156,6 @@ export const AuthContextProvider = ({
     try {
       setUser({ email: null, uid: null, displayName: null, photoURL: null });
       return await signOut(auth);
-      console.log("Logged out successfully.");
     } catch (error) {
       console.error("Error logging out ", error);
     }
