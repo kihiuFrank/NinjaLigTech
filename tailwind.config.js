@@ -33,6 +33,11 @@ module.exports = {
 
   theme: {
     extend: {
+      backgroundImage: {
+        football: "url('/assets/gaming/ninjatechgaming/football.png')",
+        worldCup: "url('/assets/gaming/ninjatechgaming/worldCup.jpeg')",
+        ninjatechgaming: "url('/assets/gaming/ninjatechgaming/NinjatechGamingHorizontalGradient.svg')",
+      },
       colors: {
         primary: {
           50: "#eff6ff",

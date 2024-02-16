@@ -141,7 +141,7 @@ export default class MultipleItems extends Component {
                   <div className="relative rounded-3xl">
                     <Image
                       src={items.imgSrc}
-                      alt="gaby"
+                      alt="game"
                       width={389}
                       height={262}
                       className="m-auto rounded-2xl clipPath"
