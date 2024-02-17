@@ -2,7 +2,7 @@ import React from "react";
 
 const Disclaimer = () => {
   return (
-    <>
+    <div className="bg-gray-blue">
       <div id="LegalDisclaimer" className="mx-auto max-w-7xl pb-12 pt-4  px-6 ">
         <div className=" space-x-1">
           <div className="col-span-6 flex flex-col justify-evenly">
@@ -61,9 +61,9 @@ const Disclaimer = () => {
               knowingly collect information from children under age 18.
               NinjaTech Gaming reserves the right to request proof of age of
               winners as a condition precedent to prize award, by providing a
-              copy of the winner's government-issued photo ID document and/or
-              requiring submission to NinjaTech Gaming of an affidavit of
-              eligibility upon a form prescribed by NinjaTech Gaming.
+              &apos;s government-issued photo ID document and/or requiring
+              submission to NinjaTech Gaming of an affidavit of eligibility upon
+              a form prescribed by NinjaTech Gaming.
               <br /> <br />
               Only one (1) prize per household per tournament.
               <br /> <br />
@@ -166,7 +166,7 @@ const Disclaimer = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

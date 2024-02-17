@@ -145,8 +145,8 @@ const page = () => {
                 Cash prizes are determined by the NinjaTech Gaming team
                 depending on the number of subscribers in a tournament.
                 <br /> <br />
-                If you subscribe for a tournament and you don't win any Prizes
-                we give you a{" "}
+                If you subscribe for a tournament and you don&apos;t win any
+                Prizes we give you a{" "}
                 <span className="font-bold "> 50% cash-back. </span>
               </h2>
             </div>
