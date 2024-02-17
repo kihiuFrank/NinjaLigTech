@@ -128,6 +128,12 @@ const footer = () => {
               Terms & conditions
             </Link>
           </h4>
+          <div className="h-5 bg-dark-red opacity-25 w-0.5"></div>
+          <h4 className="text-dark-red opacity-75 text-sm font-normal">
+            <Link href="/legal" target="_blank">
+              Legal Disclaimer
+            </Link>
+          </h4>
         </div>
       </div>
     </div>

@@ -123,7 +123,7 @@ export default class MultipleItems extends Component {
       <div id="games">
         <div className="mx-auto max-w-7xl sm:py-8 px-4 lg:px-8 ">
           <div className="sm:flex justify-between items-center">
-            <h3 className="text-midnightblue text-4xl lg:text-55xl font-semibold mb-5 sm:mb-0">
+            <h3 className="text-midnightblue text-4xl pt-4 lg:text-55xl font-semibold mb-5 sm:mb-0">
               Popular Games.
             </h3>
             <Link

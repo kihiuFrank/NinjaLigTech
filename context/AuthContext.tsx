@@ -54,7 +54,7 @@ export const AuthContextProvider = ({
           displayName: user.displayName,
           photoURL: user.photoURL,
         });
-        router.push("/");
+        //router.push("/");
       } else {
         setUser({ email: null, uid: null, displayName: null, photoURL: null });
         //router.push("/");
