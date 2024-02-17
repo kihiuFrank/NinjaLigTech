@@ -26,7 +26,7 @@ const socialLinks: socialLinks[] = [
   },
   {
     imgSrc: "/assets/socials/twitter.svg",
-    link: "www.twitter.com",
+    link: "https://twitter.com/ninjalig_tech",
     width: 14,
   },
 ];
