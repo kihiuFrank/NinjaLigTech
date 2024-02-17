@@ -15,17 +15,17 @@ interface socialLinks {
 
 const socialLinks: socialLinks[] = [
   {
-    imgSrc: "/assets/footer/facebook.svg",
+    imgSrc: "/assets/socials/facebook.svg",
     link: "www.facebook.com",
     width: 10,
   },
   {
-    imgSrc: "/assets/footer/insta.svg",
+    imgSrc: "/assets/socials/insta.svg",
     link: "www.instagram.com",
     width: 14,
   },
   {
-    imgSrc: "/assets/footer/twitter.svg",
+    imgSrc: "/assets/socials/twitter.svg",
     link: "www.twitter.com",
     width: 14,
   },

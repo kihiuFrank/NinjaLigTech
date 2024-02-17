@@ -25,7 +25,7 @@ const postData: DataType[] = [
     heading: "DREAM LEAGUE SOCCER",
     heading2: "DLS24",
     name: "",
-    imgSrc: "/assets/games/dls24.png",
+    imgSrc: "/assets/gaming/dls24.png",
     gamers: 150,
     divisions: 5,
     price: 100,
@@ -37,7 +37,7 @@ const postData: DataType[] = [
     heading: "CALL OF DUTY",
     heading2: "MOBILE",
     name: "",
-    imgSrc: "/assets/games/cod.png",
+    imgSrc: "/assets/gaming/cod.png",
     gamers: 150,
     divisions: 0,
     price: 100,
@@ -49,7 +49,7 @@ const postData: DataType[] = [
     heading: "EA SPORTS SOCCER",
     heading2: "FC MOBILE",
     name: "",
-    imgSrc: "/assets/games/fcMobile.png",
+    imgSrc: "/assets/gaming/fcMobile.png",
     gamers: 150,
     divisions: 5,
     price: 100,
@@ -61,7 +61,7 @@ const postData: DataType[] = [
     heading: "eFOOTBALL 2024",
     heading2: "KONAMI",
     name: "",
-    imgSrc: "/assets/games/efootball.png",
+    imgSrc: "/assets/gaming/efootball.png",
     gamers: 150,
     divisions: 5,
     price: 100,
@@ -73,7 +73,7 @@ const postData: DataType[] = [
     heading: "PUBG",
     heading2: "MOBILE",
     name: "",
-    imgSrc: "/assets/games/pubg.png",
+    imgSrc: "/assets/gaming/pubg.png",
     gamers: 150,
     divisions: 0,
     price: 100,
@@ -123,12 +123,12 @@ export default class MultipleItems extends Component {
       <div id="games">
         <div className="mx-auto max-w-7xl sm:py-8 px-4 lg:px-8 ">
           <div className="sm:flex justify-between items-center">
-            <h3 className="text-midnightblue text-4xl pt-4 lg:text-55xl font-semibold mb-5 sm:mb-0">
+            <h3 className="text-midnightblue text-lg lg:text-2xl pt-8 lg:pt-0 lg:text-55xl font-semibold mb-5 sm:mb-0">
               Popular Games.
             </h3>
             <Link
               href={"#games"}
-              className="text-Blueviolet text-lg font-medium space-links"
+              className="text-Blueviolet text-sm font-medium space-links"
             >
               Explore games&nbsp;&gt;&nbsp;
             </Link>
@@ -147,17 +147,17 @@ export default class MultipleItems extends Component {
                       className="m-auto rounded-2xl clipPath"
                     />
                     <div className="absolute right-5 -bottom-2 bg-ultramarine rounded-full p-2">
-                      <h3 className="text-white uppercase text-center text-sm font-medium">
+                      <h3 className="text-white uppercase text-center text-xs font-medium">
                         {items.purchaseBol} <br /> {items.purchaseBol2}
                       </h3>
                     </div>
                   </div>
 
                   <div className="px-3">
-                    <h4 className="text-2xl font-bold pt-6 text-black">
+                    <h4 className="text-sm lg:text-base font-bold pt-6 text-black">
                       {items.heading}
                     </h4>
-                    <h4 className="text-2xl font-bold pt-1 text-black">
+                    <h4 className="text-sm lg:text-base font-bold pt-1 text-black">
                       {items.heading2}
                     </h4>
 
@@ -181,7 +181,7 @@ export default class MultipleItems extends Component {
                         </div>
                       </div>
                       <div>
-                        <h3 className="text-2xl font-medium">
+                        <h3 className="text-sm lg:text-base font-medium">
                           Ksh: {items.price}
                         </h3>
                       </div>

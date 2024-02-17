@@ -3,17 +3,17 @@ import React from "react";
 const Disclaimer = () => {
   return (
     <>
-      <div id="LegalDisclaimer" className="mx-auto max-w-7xl pb-12 pt-8  px-6 ">
+      <div id="LegalDisclaimer" className="mx-auto max-w-7xl pb-12 pt-4  px-6 ">
         <div className=" space-x-1">
           <div className="col-span-6 flex flex-col justify-evenly">
-            <h1 className="text-midnightblue text-2xl pt-4 lg:text-55xl font-semibold mb-5 sm:mb-0">
+            <h1 className="text-midnightblue text-lg lg:text-2xl pt-4 font-semibold mb-5 sm:mb-0">
               LEGAL DISCLAIMER.
             </h1>
 
-            <h2 className="text-midnightblue text-md lg:text-lg font-semibold pt-2 lg:pt-4 ">
+            <h2 className="text-midnightblue text-sm lg:text-md lg:text-lg font-semibold pt-2 lg:pt-4 ">
               GENERAL ONLINE TOURNAMENT RULES
             </h2>
-            <h3 className="text-charcoal text-sm font-normal text-center lg:text-start opacity-75 pt-2 pb-2 lg:pb-4">
+            <h3 className="text-charcoal text-xs lg:text-sm font-normal text-start lg:text-start opacity-75 pt-2 pb-2 lg:pb-4">
               NinjaTech Gaming organizes online tournaments with these stated
               official rules. Each tournament, rules, prize rules, dates and any
               other specific information/details may be provided at the time of
@@ -22,18 +22,18 @@ const Disclaimer = () => {
               when participating in any online tournament.
             </h3>
 
-            <h2 className="text-midnightblue text-md lg:text-lg font-semibold pt-2 lg:pt-4 ">
+            <h2 className="text-midnightblue text-sm lg:text-md lg:text-lg font-semibold pt-2 lg:pt-4 ">
               TOURNAMENT DATES
             </h2>
-            <h3 className="text-charcoal text-sm font-normal text-center lg:text-start opacity-75 pt-2 pb-2 lg:pb-4">
+            <h3 className="text-charcoal text-xs lg:text-sm font-normal text-start lg:text-start opacity-75 pt-2 pb-2 lg:pb-4">
               Each individual tournament will be held on the scheduled dates
               provided by NinjaTech Gaming LLC.
             </h3>
 
-            <h2 className="text-midnightblue text-md lg:text-lg font-semibold pt-2 lg:pt-4 ">
+            <h2 className="text-midnightblue text-sm lg:text-md lg:text-lg font-semibold pt-2 lg:pt-4 ">
               HOW TO ENTER A TOURNAMENT
             </h2>
-            <h3 className="text-charcoal text-sm font-normal text-center lg:text-start opacity-75 pt-2 pb-2 lg:pb-4">
+            <h3 className="text-charcoal text-xs lg:text-sm font-normal text-start lg:text-start opacity-75 pt-2 pb-2 lg:pb-4">
               In order to participate in a NinjaTech Gaming tournament you must
               be a registered participant. Tournament registration is open until
               all tournament spots are filled &#8208; the number of spots per
@@ -49,10 +49,10 @@ const Disclaimer = () => {
               late, incomplete, or misdirected entries.
             </h3>
 
-            <h2 className="text-midnightblue text-md lg:text-lg font-semibold pt-2 lg:pt-4 ">
+            <h2 className="text-midnightblue text-sm lg:text-md lg:text-lg font-semibold pt-2 lg:pt-4 ">
               ELIGIBILITY & LIMITATIONS
             </h2>
-            <h3 className="text-charcoal text-sm font-normal text-center lg:text-start opacity-75 pt-2 pb-2 lg:pb-4">
+            <h3 className="text-charcoal text-xs lg:text-sm font-normal text-start lg:text-start opacity-75 pt-2 pb-2 lg:pb-4">
               All participants must be legal residents of the United States of
               America, unless otherwise stated. Participants must be at least
               eighteen years of age as of the entry date. Children under the age
@@ -70,10 +70,10 @@ const Disclaimer = () => {
               VOID IN AREAS PROHIBITED BY LAW.
             </h3>
 
-            <h2 className="text-midnightblue text-md lg:text-lg font-semibold pt-2 lg:pt-4 ">
+            <h2 className="text-midnightblue text-sm lg:text-md lg:text-lg font-semibold pt-2 lg:pt-4 ">
               FURTHER CONDITIONS
             </h2>
-            <h3 className="text-charcoal text-sm font-normal text-center lg:text-start opacity-75 pt-2 pb-2 lg:pb-4">
+            <h3 className="text-charcoal text-xs lg:text-sm font-normal text-start lg:text-start opacity-75 pt-2 pb-2 lg:pb-4">
               NinjaTech Gaming LLC. is not responsible for any
               incorrect/inaccurate information, whether caused by users of the
               site or by any of the equipment/programming associated with the
@@ -95,10 +95,10 @@ const Disclaimer = () => {
               kind in any event.
             </h3>
 
-            <h2 className="text-midnightblue text-md lg:text-lg font-semibold pt-2 lg:pt-4 ">
+            <h2 className="text-midnightblue text-sm lg:text-md lg:text-lg font-semibold pt-2 lg:pt-4 ">
               PUBLICITY
             </h2>
-            <h3 className="text-charcoal text-sm font-normal text-center lg:text-start opacity-75 pt-2 pb-2 lg:pb-4">
+            <h3 className="text-charcoal text-xs lg:text-sm font-normal text-start lg:text-start opacity-75 pt-2 pb-2 lg:pb-4">
               All participating participants give NinjaTech Gaming and its
               affiliates permission to use names, nick-names, gamer tags, and
               likeness in promotional associations of this and other
@@ -106,10 +106,10 @@ const Disclaimer = () => {
               use, unless otherwise agreed upon or where prohibited.
             </h3>
 
-            <h2 className="text-midnightblue text-md lg:text-lg font-semibold pt-2 lg:pt-4 ">
+            <h2 className="text-midnightblue text-sm lg:text-md lg:text-lg font-semibold pt-2 lg:pt-4 ">
               DECISIONS & CONDUCT
             </h2>
-            <h3 className="text-charcoal text-sm font-normal text-center lg:text-start opacity-75 pt-2 pb-2 lg:pb-4">
+            <h3 className="text-charcoal text-xs lg:text-sm font-normal text-start lg:text-start opacity-75 pt-2 pb-2 lg:pb-4">
               By participating in the Tournament, participants agree to abide
               the rules of each specific Tournament. Participants further agree
               to be bound by the decisions made by NinjaTech Gaming, its
@@ -120,10 +120,10 @@ const Disclaimer = () => {
               decisions concerning disputes are final.
             </h3>
 
-            <h2 className="text-midnightblue text-md lg:text-lg font-semibold pt-2 lg:pt-4 ">
+            <h2 className="text-midnightblue text-sm lg:text-md lg:text-lg font-semibold pt-2 lg:pt-4 ">
               PRIZE(S)
             </h2>
-            <h3 className="text-charcoal text-sm font-normal text-center lg:text-start opacity-75 pt-2 pb-2 lg:pb-4">
+            <h3 className="text-charcoal text-xs lg:text-sm font-normal text-start lg:text-start opacity-75 pt-2 pb-2 lg:pb-4">
               Prize(s) that may be awarded to eligible winner(s) are limited to
               one prize package per winner. A description of the prizes will be
               provided for each individual tournament. Prizes are
@@ -145,20 +145,20 @@ const Disclaimer = () => {
               prizes will be forfeited.
             </h3>
 
-            <h2 className="text-midnightblue text-md lg:text-lg font-semibold pt-2 lg:pt-4 ">
+            <h2 className="text-midnightblue text-sm lg:text-md lg:text-lg font-semibold pt-2 lg:pt-4 ">
               TAXES
             </h2>
-            <h3 className="text-charcoal text-sm font-normal text-center lg:text-start opacity-75 pt-2 pb-2 lg:pb-4">
+            <h3 className="text-charcoal text-xs lg:text-sm font-normal text-start lg:text-start opacity-75 pt-2 pb-2 lg:pb-4">
               Each winner is solely responsible for any and all applicable
               taxes. Participants who win over $600 in prizes will receive an
               IRS Form at the end of the calendar year and a copy of the form
               will be filed with the IRS.
             </h3>
 
-            <h2 className="text-midnightblue text-md lg:text-lg font-semibold pt-2 lg:pt-4 ">
+            <h2 className="text-midnightblue text-sm lg:text-md lg:text-lg font-semibold pt-2 lg:pt-4 ">
               MISCELLANEOUS
             </h2>
-            <h3 className="text-charcoal text-sm font-normal text-center lg:text-start opacity-75 pt-2 pb-2 lg:pb-4">
+            <h3 className="text-charcoal text-xs lg:text-sm font-normal text-start lg:text-start opacity-75 pt-2 pb-2 lg:pb-4">
               NinjaTech Gaming reserves the right to cancel and/or reschedule a
               tournament to a later date and time if for any reason a tournament
               is unable to be operated at its scheduled time/date.
