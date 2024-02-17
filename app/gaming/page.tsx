@@ -14,32 +14,32 @@ const socialLinks: socialLinks[] = [
   {
     imgSrc: "/assets/socials/facebook.svg",
     link: "https://www.facebook.com/profile.php?id=61555054053442&mibextid=9R9pXO",
-    width: 10,
+    width: 20,
   },
   {
     imgSrc: "/assets/socials/insta.svg",
     link: "https://www.instagram.com/ninjatech_gaming?igsh=c3oxaWw4ZjZsdTNr&utm_source=qr",
-    width: 15,
+    width: 20,
   },
   {
     imgSrc: "/assets/socials/twitter.svg",
     link: "https://twitter.com/GamingNinjaTech",
-    width: 15,
+    width: 20,
   },
   {
     imgSrc: "/assets/socials/whatsapp.svg",
     link: "https://chat.whatsapp.com/FQhWtNuwHll2bcSvO1ciJL",
-    width: 15,
+    width: 20,
   },
   {
     imgSrc: "/assets/socials/youtube.svg",
     link: "https://www.youtube.com/channel/UCI5i7-nvkeaxfNWVM1-zA1g",
-    width: 15,
+    width: 20,
   },
   {
     imgSrc: "/assets/socials/tiktok.svg",
     link: "https://www.tiktok.com/@ninjatech_gaming?_t=8j1l0I1xMc1&_r=1",
-    width: 12,
+    width: 20,
   },
 ];
 const page = () => {
