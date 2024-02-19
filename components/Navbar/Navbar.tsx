@@ -7,7 +7,7 @@ import Drawer from "./Drawer";
 import Drawerdata from "./Drawerdata";
 import SignInDialog from "./SignInDialog";
 import Image from "next/image";
-import LogOutDialog from "./userDialog";
+import UserDialog from "./userDialog";
 import { useAuth } from "@/context/AuthContext";
 
 interface NavigationItem {
@@ -21,7 +21,7 @@ const navigation: NavigationItem[] = [
   { name: "About", href: "/about", current: false },
   { name: "Services", href: "/services", current: false },
   { name: "Gaming", href: "/gaming", current: false },
-  { name: "News", href: "/news", current: false },
+  { name: "LeaderBoard", href: "/leader-board", current: false },
   { name: "Contact", href: "/contact", current: false },
 ];
 
@@ -70,23 +70,16 @@ const Navbar = () => {
                 <Image
                   width={100}
                   height={100}
-                  className="block h-full w-40 lg:hidden"
+                  className=" h-full w-30  "
                   src={"/assets/logo/logo.png"}
-                  alt="dsign-logo"
-                />
-                <Image
-                  width={100}
-                  height={100}
-                  className="hidden h-full w-40 lg:block"
-                  src={"/assets/logo/logo.png"}
-                  alt="dsign-logo"
+                  alt="design-logo"
                 />
               </div>
 
               {/* LINKS */}
 
               <div className="hidden lg:block m-auto">
-                <div className="flex space-x-4">
+                <div className="grid-cols-6">
                   {navigation.map((item) => (
                     <CustomLink
                       key={item.name}
@@ -112,7 +105,7 @@ const Navbar = () => {
 
             {/* AUTHENTICATION DIALOG */}
 
-            {user.uid != null ? <LogOutDialog /> : <SignInDialog />}
+            {user.uid != null ? <UserDialog /> : <SignInDialog />}
 
             {/* DRAWER FOR MOBILE VIEW */}
 

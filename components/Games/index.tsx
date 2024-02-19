@@ -127,10 +127,10 @@ export default class MultipleItems extends Component {
               Popular Games.
             </h3>
             <Link
-              href={"#games"}
+              href={"/leader-board"}
               className="text-Blueviolet text-sm font-medium space-links"
             >
-              Explore games&nbsp;&gt;&nbsp;
+              LeaderBoard&nbsp;&gt;&nbsp;
             </Link>
           </div>
 

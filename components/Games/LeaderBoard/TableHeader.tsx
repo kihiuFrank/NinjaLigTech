@@ -2,19 +2,19 @@ const TableHeader = () => {
   return (
     <thead>
       <tr>
-        <th className="px-4 py-5 border-b-2 border-gray-200 bg-lightblack text-center text-base font-semibold text-darkwhite uppercase tracking-wider lg:hidden">
+        <th className="px-4 py-5 border-b-2 border-gray-200  text-center text-sm lg:text-lg font-semibold uppercase tracking-wider  hidden md:table-cell  ">
           Rank
         </th>
-        <th className="px-4 py-5 border-b-2 border-gray-200 bg-lightblack text-left text-base font-semibold text-darkwhite uppercase tracking-wider lg:text-sm">
+        <th className="px-4 py-5 border-b-2 border-gray-200  text-left text-sm lg:text-lg font-semibold uppercase tracking-wider ">
           Participant&apos;s Info
         </th>
-        <th className="px-4 py-5 border-b-2 border-gray-200 bg-lightblack text-left text-base font-semibold text-darkwhite uppercase tracking-wider lg:hidden">
+        <th className="px-4 py-5 border-b-2 border-gray-200  text-left text-sm lg:text-lg font-semibold uppercase tracking-wider hidden md:table-cell ">
           Team Name
         </th>
-        <th className="px-4 py-5 border-b-2 border-gray-200 bg-lightblack text-center text-base font-semibold text-darkwhite uppercase tracking-wider lg:text-sm">
+        <th className="px-4 py-5 border-b-2 border-gray-200  text-center text-sm lg:text-lg font-semibold uppercase tracking-wider ">
           Earnings
         </th>
-        <th className="px-4 py-5 border-b-2 border-gray-200 bg-lightblack text-left text-base font-semibold text-darkwhite uppercase tracking-wider lg:hidden">
+        <th className="px-4 py-5 border-b-2 border-gray-200  text-left text-sm lg:text-lg font-semibold uppercase tracking-wider hidden md:table-cell">
           Trophies
         </th>
       </tr>

@@ -5,35 +5,15 @@ import { parseName } from "@/utils/parseName";
 const UserCard = ({ data, index }: { data: TableDataType; index: number }) => {
   return (
     <tr>
-      <td className="p-5 border-b border-gray-200 bg-darkwhite lg:hidden">
-        <p className="font-mainfont text-lg font-medium text-darkgrey text-center">
+      <td className="p-5 border-b border-gray-200 hidden md:table-cell  ">
+        <p className="font-mainfont text-lg font-medium text-darkgrey text-center ">
           {index + 4}
         </p>
       </td>
-      <td className="border-b border-gray-200 bg-darkwhite">
-        <p className="items-center font-codefont text-xl font-semibold text-primarydark text-center lg:px-3 lg:py-4 lg:text-lg md:text-base">
-          # {data.beginnerTrophies}
-        </p>
 
-        <p className="items-center font-codefont text-xl font-semibold text-primarydark text-center lg:px-3 lg:py-4 lg:text-lg md:text-base">
-          # {data.amateurTrophies}
-        </p>
-
-        <p className="items-center font-codefont text-xl font-semibold text-primarydark text-center lg:px-3 lg:py-4 lg:text-lg md:text-base">
-          # {data.proTrophies}
-        </p>
-
-        <p className="items-center font-codefont text-xl font-semibold text-primarydark text-center lg:px-3 lg:py-4 lg:text-lg md:text-base">
-          # {data.eliteTrophies}
-        </p>
-
-        <p className="items-center font-codefont text-xl font-semibold text-primarydark text-center lg:px-3 lg:py-4 lg:text-lg md:text-base">
-          # {data.legendaryTrophies}
-        </p>
-      </td>
-      <td className="p-5 border-b border-gray-200 bg-darkwhite w-1/2 lg:px-3 lg:py-4">
+      <td className="p-5 border-b border-gray-200  w-1/2 lg:px-3 lg:py-4 xs:hidden">
         <div className="flex items-center">
-          <div className="flex-shrink-0 w-12 h-12 mr-5 lg:hidden">
+          <div className="flex-shrink-0 w-8 h-8 lg:w-14 lg:h-14 mr-5  ">
             <Image
               className="w-full h-full rounded-full"
               src={data.avatar_url}
@@ -43,12 +23,12 @@ const UserCard = ({ data, index }: { data: TableDataType; index: number }) => {
             />
           </div>
           <div>
-            <p className="font-codefont text-xl font-medium text-lightblack tracking-wide capitalize lg:text-lg md:text-base">
+            <p className="font-codefont text-sm lg:text-lg font-medium  tracking-wide capitalize  md:text-base">
               {parseName(data.full_name) || (
                 <span className="text-lightgrey">Name not found...</span>
               )}
             </p>
-            <p className="font-curlfont text-base font-semibold text-darkgrey lg:hidden">
+            <p className="font-curlfont text-sm lg:text-lg font-semibold text-darkgrey ">
               {data.game || (
                 <span className="text-warningoff">Game not found...</span>
               )}
@@ -56,16 +36,37 @@ const UserCard = ({ data, index }: { data: TableDataType; index: number }) => {
           </div>
         </div>
       </td>
-      <td className="p-5 border-b border-gray-200 bg-darkwhite lg:hidden">
-       
-          {data.team_name}
-       
+
+      <td className="p-5 border-b border-gray-200  hidden md:table-cell">
+        <span className="text-sm lg:text-lg">{data.team_name}</span>
       </td>
 
-      <td className="p-5 border-b border-gray-200 bg-darkwhite text-center lg:px-3 lg:py-4 xs:hidden">
-        <span className="font-codefont text-xl font-medium text-lightblack lg:text-base">
-          {data.earnings}
+      <td className="p-5 border-b border-gray-200  text-center lg:px-3 lg:py-4 ">
+        <span className="font-codefont text-sm lg:text-lg font-medium  ">
+          Ksh: {data.earnings}
         </span>
+      </td>
+
+      <td className="border-b border-gray-200 hidden md:table-cell">
+        <p className="items-center font-codefont text-xl  text-center  md:text-base">
+          Legendary ({data.legendaryTrophies})
+        </p>
+
+        <p className="items-center font-codefont text-xl  text-center md:text-base">
+          Elite ({data.eliteTrophies})
+        </p>
+
+        <p className="items-center font-codefont text-xl   text-center  md:text-base">
+          Pro ({data.proTrophies})
+        </p>
+
+        <p className="items-center font-codefont text-xl   text-center  md:text-base">
+          Amateur ({data.amateurTrophies})
+        </p>
+
+        <p className="items-center font-codefont text-xl   text-center  md:text-base ">
+          Beginner ({data.beginnerTrophies})
+        </p>
       </td>
     </tr>
   );
