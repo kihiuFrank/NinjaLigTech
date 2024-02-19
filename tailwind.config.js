@@ -36,7 +36,8 @@ module.exports = {
       backgroundImage: {
         football: "url('/assets/gaming/ninjatechgaming/football.png')",
         worldCup: "url('/assets/gaming/ninjatechgaming/worldCup.jpeg')",
-        ninjatechgaming: "url('/assets/gaming/ninjatechgaming/NinjatechGamingHorizontalGradient.svg')",
+        ninjatechgaming:
+          "url('/assets/gaming/ninjatechgaming/NinjatechGamingHorizontalGradient.svg')",
       },
       colors: {
         primary: {
@@ -112,6 +113,9 @@ module.exports = {
         "Segoe UI Symbol",
         "Noto Color Emoji",
       ],
+      mainfont: ["Inter", "sans-serif"],
+      codefont: ["Outfit", "sans-serif"],
+      curlfont: ["Quicksand", "sans-serif"],
     },
   },
 };

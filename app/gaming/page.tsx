@@ -46,7 +46,7 @@ const page = () => {
   return (
     <div id="home-section">
       <div className="bg-lightkblue">
-        <div className="mx-auto max-w-7xl pb-12    px-6 ">
+        <div className="mx-auto max-w-7xl pb-12  pt-8 lg:pt-14  px-6 ">
           <div className="grid grid-cols-1 lg:grid-cols-12 space-x-1">
             <div className="col-span-6  flex justify-center">
               <img
