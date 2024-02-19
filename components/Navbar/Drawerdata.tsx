@@ -17,7 +17,7 @@ const navigation: NavigationItem[] = [
   { name: "About", href: "/about", current: false },
   { name: "Services", href: "/services", current: false },
   { name: "Gaming", href: "/gaming", current: false },
-  { name: "News", href: "/news", current: false },
+  { name: "LeaderBoard", href: "/leader-board", current: false },
   { name: "Contact", href: "/contact", current: false },
 ];
 
