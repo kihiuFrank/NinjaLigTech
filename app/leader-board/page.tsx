@@ -60,7 +60,7 @@ const page = () => {
             </p>
           </div>
 
-          <div className="relative my-10 px-12 flex justify-center items-center gap-8 lg:px-8 sm:px-2 flex-col  lg:flex-row">
+          <div className="relative my-10  flex justify-center items-center gap-8  sm:px-2 flex-col  lg:flex-row">
             {winnersData.map((item, i) => (
               <TopCard key={item.team_name} data={item} index={i} />
             ))}
