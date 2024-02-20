@@ -38,7 +38,7 @@ const TopCard = ({ data, index }: { data: TableDataType; index: number }) => {
 
       <div className="m-auto w-full flex flex-row justify-between ">
         <div>
-          <h2 className="mt-2.5 mb-0 mx-auto text-lg lg:text-xl font-medium  text-center ">
+          <h2 className="mt-2.5 mb-0 mx-auto text-lg lg:text-xl font-curlfont text-center ">
             Earnings
           </h2>
           <p className="-mt-[2px] mb-2.5 mx-auto text-base lg:text-lg font-medium  text-center ">
@@ -50,14 +50,26 @@ const TopCard = ({ data, index }: { data: TableDataType; index: number }) => {
           <div className="absolute right-0 top-0 hidden h-full min-h-[1em] w-px self-stretch border-t-0 bg-gradient-to-tr from-transparent via-neutral-500 to-transparent opacity-100 dark:opacity-100 lg:block"></div>
         </div> */}
 
-        <div className="after:block after:bg-black after:w-[1px] after:h-12 after:mx-auto after:my-2"></div>
+        <div className="after:block after:bg-black after:w-[1px] after:h-40 after:mx-auto after:my-2"></div>
 
         <div>
-          <h2 className="mt-2.5 mb-0 mx-auto text-lg lg:text-xl font-medium  text-center ">
+          <h2 className="mt-2.5 mb-0 mx-auto text-lg lg:text-xl font-curlfont  text-center ">
             Trophies
           </h2>
-          <p className="-mt-[2px] mb-2.5 mx-auto text-base lg:text-lg font-medium  text-center ">
+          <p className="-mt-[2px] mb-2.5 mx-auto text-sm font-curlfont  text-center ">
+            Legendary ({data.legendaryTrophies})
+          </p>
+          <p className="-mt-[2px] mb-2.5 mx-auto text-sm font-curlfont  text-center ">
             Elite ({data.eliteTrophies})
+          </p>
+          <p className="-mt-[2px] mb-2.5 mx-auto text-sm  font-curlfont  text-center ">
+            Pro ({data.proTrophies})
+          </p>
+          <p className="-mt-[2px] mb-2.5 mx-auto text-sm font-curlfont text-center ">
+            Amateur ({data.amateurTrophies})
+          </p>
+          <p className="-mt-[2px] mb-2.5 mx-auto text-sm font-curlfont  text-center ">
+            Beginner ({data.beginnerTrophies})
           </p>
         </div>
       </div>

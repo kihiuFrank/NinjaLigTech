@@ -83,7 +83,7 @@ const page = () => {
                 <div className="flex gap-2 md:gap-8 lg:gap-8">
                   {socialLinks.map((items, i) => (
                     <Link href={items.link} key={i}>
-                      <div className="bg-white  h-6 lg:h-12  w-6 lg:w-12 shadow-xl text-base rounded-full flex items-center justify-center footer-icons hover:bg-ultramarine">
+                      <div className="bg-white  h-6 lg:h-12  w-6 lg:w-12 shadow-xl text-base rounded-full flex items-center justify-center footer-icons hover:bg-semiblueviolet">
                         <Image
                           src={items.imgSrc}
                           alt={items.imgSrc}
