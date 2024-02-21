@@ -30,7 +30,9 @@
     ".next/types/**/*.ts",
     "components/ComingSoon/ComingSoon.tsx",
     "app/gaming/page.tsx",
-    "app/contact/page.tsx"
+    "app/contact/page.tsx",
+    "components/Contacts/ContactForm.js",
+    "components/Contacts/MuiPhone.jsx"
   ],
   "exclude": ["node_modules"]
 }

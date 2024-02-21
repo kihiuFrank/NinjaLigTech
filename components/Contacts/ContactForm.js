@@ -117,7 +117,7 @@ const ContactForm = () => {
         </div>
       </div>
 
-      <div>
+      <div className="">
         <div className="border-blue">
           <PhoneInput
             id="contact"
