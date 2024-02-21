@@ -67,6 +67,7 @@ module.exports = {
         ultramarine: "#1A21BC",
         slategray: "#57595F",
         lightkblue: "#F6FAFF",
+        frankBlue: "#e7f0ff",
         grey500: "#ECECEC",
         red: "#B40000",
         gold: "#FFB900",

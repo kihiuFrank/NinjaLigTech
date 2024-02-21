@@ -29,7 +29,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "components/ComingSoon/ComingSoon.tsx",
-    "app/gaming/page.tsx"
+    "app/gaming/page.tsx",
+    "app/contact/page.tsx"
   ],
   "exclude": ["node_modules"]
 }
