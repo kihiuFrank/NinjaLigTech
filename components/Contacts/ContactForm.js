@@ -2,16 +2,38 @@
 
 import React, { useState, useRef } from "react";
 
-import "react-phone-input-2/lib/style.css";
-import PhoneNumberInput from "@/components/Contacts/PhoneNumberInput";
 import emailjs from "@emailjs/browser";
 import { useRouter } from "next/navigation";
 import Spinner from "@/components/Spinner/Spinner";
+
+import {
+  PhoneInput,
+  defaultCountries,
+  parseCountry,
+} from "react-international-phone";
+import "react-international-phone/style.css";
+import { PhoneNumberUtil } from "google-libphonenumber";
+
+const phoneUtil = PhoneNumberUtil.getInstance();
+
+const isPhoneValid = (phone) => {
+  try {
+    return phoneUtil.isValidNumber(phoneUtil.parseAndKeepRawInput(phone));
+  } catch (error) {
+    return false;
+  }
+};
+// const countries = defaultCountries.filter((country) => {
+//   const { iso2 } = parseCountry(country);
+//   return ["us", "ua", "gb"].includes(iso2);
+// });
 
 const ContactForm = () => {
   const router = useRouter();
   const form = useRef();
 
+  const [phone, setPhone] = useState("");
+  const isValid = isPhoneValid(phone);
   const [isLoading, setIsLoading] = useState(false);
 
   const sendEmail = (e) => {
@@ -44,6 +66,7 @@ const ContactForm = () => {
         }
       );
   };
+
   return (
     <form ref={form} onSubmit={sendEmail} className="space-y-8">
       {isLoading && <Spinner />}
@@ -94,7 +117,29 @@ const ContactForm = () => {
         </div>
       </div>
 
-      <PhoneNumberInput />
+      <div>
+        <div className="border-blue">
+          <PhoneInput
+            id="contact"
+            name="contact"
+            defaultCountry="ke"
+            value={phone}
+            onChange={(phone) => setPhone(phone)}
+            //countries={countries}
+            inputProps={{
+              required: true,
+              autoFocus: true,
+              className:
+                "shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-1.9  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light",
+            }}
+          />
+        </div>
+        {!isValid && (
+          <div className="text-xs" style={{ color: "red" }}>
+            Phone is not valid!
+          </div>
+        )}
+      </div>
 
       <div className="sm:col-span-2">
         <textarea
@@ -108,12 +153,22 @@ const ContactForm = () => {
       </div>
 
       <div className="flex flex-col items-center text-center text-xs">
-        <button
-          type="submit"
-          className="py-3 px-5 text-sm font-medium text-center text-white rounded-full bg-Blueviolet   w-full hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
-        >
-          Send message
-        </button>
+        {!isValid ? (
+          <button
+            disabled
+            type="submit"
+            className="py-3 px-5 text-sm font-medium text-center text-white rounded-full bg-semiblueviolet     w-full  focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:focus:ring-primary-800"
+          >
+            Send message
+          </button>
+        ) : (
+          <button
+            type="submit"
+            className="py-3 px-5 text-sm font-medium text-center text-white rounded-full bg-Blueviolet  w-full hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+          >
+            Send message
+          </button>
+        )}
 
         <p className="opacity-80 pt-2 px-14">
           By contacting us, you agree to our
