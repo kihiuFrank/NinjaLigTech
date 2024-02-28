@@ -11,9 +11,9 @@ export default function Home() {
       <Banner />
       {/* <Companies /> */}
       <Games />
-      <Mentor />
-      {/* <Testimonials />
-    <Newsletter /> */}
+      {/* <Mentor /> */}
+      <Testimonials />
+      <Newsletter />
     </main>
   );
 }

@@ -56,11 +56,11 @@ const page = () => {
       <div
         style={{
           backgroundImage: `url(/assets/about/about.jpg)`,
-          height: "400px",
+          height: "500px",
         }}
-        className="bg-gray-500 bg-blend-multiply overflow-hidden  bg-cover bg-no-repeat p-12 text-center "
+        className="bg-gray-500 bg-blend-multiply overflow-hidden  bg-cover bg-no-repeat p-6 lg:p-12 text-center flex items-center "
       >
-        <div className=" mx-auto max-w-7xl   pt-4 lg:pt-8  px-6 ">
+        <div className=" mx-auto max-w-7xl   pt-4 lg:pt-8 px-0 lg:px-6 ">
           <div className=" flex flex-col justify-evenly ">
             <h1 className="text-white text-lg lg:text-2xl font-semibold ">
               About Us
@@ -68,11 +68,22 @@ const page = () => {
             <p className="text-gray-200 text-sm lg:text-lg font-curlfont tracking-wide text-start lg:text-start opacity-75 pt-8 lg:pt-12 px-2 md:px-32  ">
               NinjaLigTech is the partner of choice for building web-based and
               mobile app products for businesses of all sizes. Should they be
-              scaled-up or developed from scratch - we will manage with it.
+              scaled-up or developed from scratch - we will manage with it. Our
+              remote agile teams of engineers immerse themselves in your
+              project, maintaining your company culture and working in line with
+              your strategic goals.
               <br />
               <br />
-              Besides programming, our service includes user experience, graphic
-              design and project management consultancies.
+              Besides programming, we also have{" "}
+              <a
+                href={"/gaming"}
+                className="text-cornflowerblue hover:text-Blueviolet  font-medium space-links"
+              >
+                NinjaTechGaming (NTG)
+              </a>{" "}
+              which is an online community for gamers to interact with each
+              other and compete for PRIZES. NTG is the best community for
+              competitive gaming in Africa.
             </p>
           </div>
         </div>
@@ -88,10 +99,10 @@ const page = () => {
               <p className="text-charcoal text-sm lg:text-lg font-curlfont tracking-wide text-start lg:text-start opacity-75 pt-2 lg:pt-2 ">
                 Our belief in creating tangible value for our customers is what
                 we think is different about NINJALIG TECHNOLOGIES. Our attention
-                to detail and quality is unmatched in the industry. We're not
-                just a resource provider. We value our customers' success as
-                much as our own - sharing development risk, so that they can be
-                bold in their adoption of new technologies.
+                to detail and quality is unmatched in the industry. We&apos;re
+                not just a resource provider. We value our customers&apos;
+                success as much as our own - sharing development risk, so that
+                they can be bold in their adoption of new technologies.
               </p>
             </div>
 

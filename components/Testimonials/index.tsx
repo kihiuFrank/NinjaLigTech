@@ -15,46 +15,25 @@ interface DataType {
 
 const postData: DataType[] = [
   {
-    name: "Janie Fox",
-    profession: "CEO, Parkview Int.Ltd",
+    name: "Esther Muriuki",
+    profession: "Delview Supermarket",
     comment:
-      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
-    imgSrc: "/assets/testimonial/user17.png",
-  },
-  {
-    name: "Leslie Alexander",
-    profession: "CEO, Parkview Int.Ltd",
-    comment:
-      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
-    imgSrc: "/assets/testimonial/user22.png",
-  },
-  {
-    name: "Cody Fisher",
-    profession: "CEO, Parkview Int.Ltd",
-    comment:
-      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
+      "Right from the start, we have loved NinjaLigTech's commitment and engagement. They came to us with the best people to try to understand our context, our business idea, an developed the first prototype with us. They were very professional and customer oriented. I think without NinjaLigTech, it probably would not have been possible to have such a successful product in such a short time.  ",
     imgSrc: "/assets/testimonial/user10.webp",
   },
   {
-    name: "Robert Fox",
-    profession: "CEO, Parkview Int.Ltd",
+    name: "Elijah Musau",
+    profession: "DLS24 Gamer",
     comment:
       "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
-    imgSrc: "/assets/testimonial/user11.wepb",
+    imgSrc: "/assets/testimonial/user23.png",
   },
   {
-    name: "Leslie Alexander",
-    profession: "CEO, Parkview Int.Ltd",
+    name: "Nimo Barkadie",
+    profession: "DLS24 Gamer",
     comment:
       "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
-    imgSrc: "/assets/testimonial/user15.png",
-  },
-  {
-    name: "Cody Fisher",
-    profession: "CEO, Parkview Int.Ltd",
-    comment:
-      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
-    imgSrc: "/assets/mentor/user23.png",
+    imgSrc: "/assets/testimonial/user22.png",
   },
 ];
 
