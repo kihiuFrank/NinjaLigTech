@@ -21,7 +21,7 @@ const navigation: NavigationItem[] = [
   { name: "About", href: "/about", current: false },
   { name: "Services", href: "/services", current: false },
   { name: "Gaming", href: "/gaming", current: false },
-  { name: "NTG-LeaderBoard", href: "/leader-board", current: false },
+  { name: "LeaderBoard", href: "/leader-board", current: false },
   { name: "Contact", href: "/contact", current: false },
 ];
 
@@ -61,7 +61,7 @@ const Navbar = () => {
   return (
     <Disclosure as="nav" className="navbar">
       <>
-        <div className="mx-auto max-w-7xl px-6 py-4 lg:px-8">
+        <div className="mx-auto max-w-7xl py-4 lg:px-8">
           <div className="relative flex h-12 md:h-20 items-center justify-between">
             <div className="flex flex-1 items-center sm:items-stretch sm:justify-start">
               {/* LOGO */}
