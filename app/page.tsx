@@ -13,7 +13,7 @@ export default function Home() {
       <Games />
       {/* <Mentor /> */}
       <Testimonials />
-      <Newsletter />
+      {/* <Newsletter /> */}
     </main>
   );
 }

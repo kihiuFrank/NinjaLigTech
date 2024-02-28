@@ -22,18 +22,18 @@ const postData: DataType[] = [
     imgSrc: "/assets/testimonial/user10.webp",
   },
   {
-    name: "Elijah Musau",
-    profession: "DLS24 Gamer",
-    comment:
-      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
-    imgSrc: "/assets/testimonial/user23.png",
-  },
-  {
     name: "Nimo Barkadie",
     profession: "DLS24 Gamer",
     comment:
-      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
+      "NinjaTechGaming is the best gamers community period! I have subscribed to many of their tournaments and I have won and lost some. However, the team is very dedicated and very knowledgeable on how the games work. However, it would be better if you gave the same dedication to other games as you do for DLS. Other than that, it's a pleasure being in the NTG Community. ",
     imgSrc: "/assets/testimonial/user22.png",
+  },
+  {
+    name: "Elijah Musau",
+    profession: "DLS24 Gamer",
+    comment:
+      "It's an enjoyable gaming community for football lovers and the newbies, good team and very friendly , it's really comfortable when playing, thanks for the hard work. If the game decides that a particular player is not gonna score, no matter how hard you try the shots always hit the post or away even with a shot of 100, it pisses me off when I lose more than 3 chances only to concede a goal at the end, pls fix this.",
+    imgSrc: "/assets/testimonial/user23.png",
   },
 ];
 
