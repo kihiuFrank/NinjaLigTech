@@ -147,7 +147,9 @@ export const AuthContextProvider = ({
         // ...
       })
       .catch((error) => {
-        console.log("Error logging in user: ", error);
+        console.log(
+          `Error logging in user with email ${error.email} and credentials ${error.credential}. Full error is ${error}`
+        );
       });
   };
 

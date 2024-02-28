@@ -136,7 +136,7 @@ const ContactForm = () => {
         </div>
         {!isValid && (
           <div className="text-xs" style={{ color: "red" }}>
-            Phone is not valid!
+            Enter a valid phone no!
           </div>
         )}
       </div>

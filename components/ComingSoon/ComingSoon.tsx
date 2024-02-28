@@ -8,7 +8,7 @@ const ComingSoon = () => {
       <div className="min-h-screen flex flex-col justify-center items-center bg-lightkblue">
         <img
           src={user.photoURL}
-          alt="Logo"
+          alt=""
           className="object-cover w-40 h-40 mb-8 rounded-full"
         />
         <h1 className="text-2xl sm:text-4xl font-bold mb-4">Coming Soon</h1>

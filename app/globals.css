@@ -5,6 +5,12 @@
 @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";
 
+@layer base {
+    .disable-blur{
+        image-rendering: -webkit-optimize-contrast;
+    }
+  }
+
 body {
   font-family: "Poppins", sans-serif;
 }
