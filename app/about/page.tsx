@@ -6,6 +6,7 @@ import Disclaimer from "../legal/page";
 import Link from "next/link";
 import Image from "next/image";
 import Mentor from "@/components/Mentor";
+import { BiSolidRightArrowCircle } from "react-icons/bi";
 
 interface socialLinks {
   imgSrc: string;
@@ -75,12 +76,12 @@ const page = () => {
               <br />
               <br />
               Besides programming, we also have{" "}
-              <a
+              <Link
                 href={"/gaming"}
                 className="text-cornflowerblue hover:text-Blueviolet  font-medium space-links"
               >
                 NinjaTechGaming (NTG)
-              </a>{" "}
+              </Link>{" "}
               which is an online community for gamers to interact with each
               other and compete for PRIZES. NTG is the best community for
               competitive gaming in Africa.
@@ -110,6 +111,23 @@ const page = () => {
               <img className="rounded-lg " src="/assets/about/bg03.png" />
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className="bg-black ">
+        <div className="flex items-center flex-col md:flex-row justify-center gap-4 h-24 ">
+          <div className="hidden md:block after:block after:bg-Blueviolet after:w-[0.5rem] after:h-14 after:mx-auto after:my-2"></div>
+
+          <h1 className="text-white text-base lg:text-lg font-curlfont ">
+            Ready to realise your product vision?
+          </h1>
+          <Link
+            href={"/contact"}
+            className="flex items-center gap-1 text-white text-sm font-curlfont lg:text-base  "
+          >
+            <h2 className=" "> Partner with Us</h2>
+            <BiSolidRightArrowCircle className="text-4xl " />
+          </Link>
         </div>
       </div>
 
