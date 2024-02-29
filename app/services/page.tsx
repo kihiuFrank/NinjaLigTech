@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import ComingSoon from "../../components/ComingSoon/ComingSoon";
 
@@ -164,9 +165,9 @@ const page = () => {
                 web applications with multiple features. We have great knowledge
                 and experience in using technologies that fall under MERN stack
                 which are MongoDB, ExpressJS, React.js, and Node.js. We cater to
-                our clients' business-specific requirements using our best MERN
-                stack resources and build them solutions that will upscale their
-                businesses.
+                our clients&apos; business-specific requirements using our best
+                MERN stack resources and build them solutions that will upscale
+                their businesses.
               </p>
 
               <div className="flex justify-center p-4 gap-4">
@@ -272,10 +273,10 @@ const page = () => {
               <p className="text-charcoal text-sm lg:text-base font-curlfont tracking-wide text-start lg:text-start opacity-75 pt-2 lg:pt-2 ">
                 On using us to develop your Minimum Viable Product (MVP), we
                 make sure that you have all the right information, suggestions,
-                alternate solutions for building a product that's accurately
-                right for your customers and their needs. We start with
-                analyzing ideas, make a plan, design a prototype, and then build
-                a product that is scalable, easily customizable, and
+                alternate solutions for building a product that&apos;s
+                accurately right for your customers and their needs. We start
+                with analyzing ideas, make a plan, design a prototype, and then
+                build a product that is scalable, easily customizable, and
                 customer-centric. Our goal is to build a product with right
                 amount of efforts and to achieve maximum validation and
                 appreciation from the market. We also have a SEO, SMM, and
@@ -465,11 +466,11 @@ const page = () => {
                 a Telegram bot that is used for parsing jobs from a platform,
                 filtering them, and sending very best jobs to the users via
                 Telegram. - Another bot that we developed is about a Leave
-                Management System for a company's internal use. There were so
-                many requests from the employees to streamline and simplify the
-                leave requesting process and ‘Voila!’, we developed a bot for
-                them so that they can easily apply for leave through Telegram
-                and Skype.
+                Management System for a company&apos;s internal use. There were
+                so many requests from the employees to streamline and simplify
+                the leave requesting process and ‘Voila!’, we developed a bot
+                for them so that they can easily apply for leave through
+                Telegram and Skype.
               </p>
               <div className="flex justify-center p-4 gap-4">
                 <div className="text-Blueviolet   hover:text-semiblueviolet">
@@ -580,9 +581,9 @@ const page = () => {
                 using MEAN Stack on-time and in-budget. We have great knowledge
                 and experience using technologies that fall under the MEAN
                 stack: MongoDB, ExpressJS, Angular.js, and Node.js. We cater to
-                our clients' business-specific requirements using our best MEAN
-                stack resources and build the solutions that will upscale their
-                businesses.
+                our clients&apos; business-specific requirements using our best
+                MEAN stack resources and build the solutions that will upscale
+                their businesses.
               </p>
               <div className="flex justify-center p-4 gap-4">
                 <div className="text-Blueviolet   hover:text-semiblueviolet">
@@ -785,8 +786,8 @@ const page = () => {
               </h1>
               <p className="text-charcoal text-sm lg:text-base font-curlfont tracking-wide text-start lg:text-start opacity-75 pt-2 lg:pt-2 ">
                 We are the ideal place for you to develop and publish your iOS
-                app using cutting-edge technologies. As India's leading ios app
-                development company, we provide feature-packed iOS apps for
+                app using cutting-edge technologies. As India&apos;s leading ios
+                app development company, we provide feature-packed iOS apps for
                 startups and businesses. Contact us immediately to discuss your
                 business needs and receive some custom-made iOS app solutions.
               </p>

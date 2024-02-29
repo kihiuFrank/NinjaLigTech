@@ -4,7 +4,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <div className="bg-frankBlue">
+    <div className="bg-paleblue">
       <div className="mx-auto max-w-7xl pb-12  pt-8 lg:pt-14 px-6 ">
         <div className="grid grid-cols-1 lg:grid-cols-[55%_45%] gap-4">
           <div className=" flex flex-col justify-evenly">
