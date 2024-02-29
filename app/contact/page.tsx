@@ -18,7 +18,7 @@ const page = () => {
               </p>
 
               <p className="text-sm lg:text-base pt-4 lg:pt-8 font-light text-start text-gray-500 dark:text-gray-400">
-                <a href="mailto:franklinekihiu.com" target="_blank">
+                <a href="mailto:franklinekihiu@gmail.com" target="_blank">
                   info@ninjaligtech.com
                 </a>
               </p>
@@ -60,7 +60,7 @@ const page = () => {
                 <p className="pt-2 lg:pt-4 text-darkgray text-sm lg:text-base font-curlfont text-start  ">
                   For media-related questions or press Inquiries, please contact
                   us at{" "}
-                  <a href="mailto:franklinekihiu.com" target="_blank">
+                  <a href="mailto:franklinekihiu@gmail.com" target="_blank">
                     media@ninjaligtech.com
                   </a>{" "}
                 </p>
