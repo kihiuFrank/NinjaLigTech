@@ -68,8 +68,13 @@ const page = () => {
             </div>
           </div>
 
-          <div className="p-2 lg:p-8">
-            <div className="bg-white rounded-2xl ">
+          <div className="p-2 lg:p-8 ">
+            <div
+              style={{
+                backgroundImage: `url(/assets/services/bg04.png)`,
+              }}
+              className=" bg-blend-multiply overflow-hidden rounded-2xl bg-cover bg-no-repeat p-6 lg:p-12 text-center flex items-center "
+            >
               <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
                 <h2 className="mb-4 text-2xl lg:text-4xl text-start tracking-tight font-curlfont text-gray-900 dark:text-white">
                   Get in Touch
