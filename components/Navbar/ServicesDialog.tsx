@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { useAuth } from "../../context/AuthContext";
 import DropDownMenu from "./DropDownMenu";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 const ServicesDialog = () => {
   // Use the Logout method from the AuthContext
@@ -23,6 +23,8 @@ const ServicesDialog = () => {
     setDropdownVisible(false);
   };
 
+  const pathname = usePathname();
+
   return (
     <div className="absolute inset-y-0 right-0 flex items-center  sm:static sm:inset-auto">
       <div
@@ -32,7 +34,11 @@ const ServicesDialog = () => {
         onMouseLeave={handleMouseLeave}
       >
         <button
-          className="flex items-center text-sm pe-1 font-medium text-gray-900 rounded-full hover:text-blue-600 dark:hover:text-blue-500 md:me-0 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:text-white"
+          className={
+            pathname == "/services"
+              ? "active text-blue-700 flex items-center"
+              : "flex items-center text-sm pe-1 font-medium text-gray-900 rounded-full hover:text-blue-600 dark:hover:text-blue-500 md:me-0 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:text-white"
+          }
           type="button"
         >
           <span className="sr-only">Open user menu</span>
