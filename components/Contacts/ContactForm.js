@@ -171,9 +171,13 @@ const ContactForm = () => {
         )}
 
         <p className="opacity-80 pt-2 px-14">
-          By contacting us, you agree to our
-          <span className="font-semibold"> Terms of service</span> and{" "}
-          <span className="font-semibold"> Privacy Policy</span>
+          Facing trouble in submitting form? then simply mail us on
+          <span className="font-semibold text-Blueviolet">
+            <a href="mailto:franklinekihiu@gmail.com" target="_blank">
+              {" "}
+              info@ninjaligtech.com
+            </a>
+          </span>
         </p>
       </div>
     </form>

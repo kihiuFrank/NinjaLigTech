@@ -9,6 +9,8 @@ import SignInDialog from "./SignInDialog";
 import Image from "next/image";
 import UserDialog from "./userDialog";
 import { useAuth } from "@/context/AuthContext";
+import { useRouter } from "next/navigation";
+import ServicesDialog from "./ServicesDialog";
 
 interface NavigationItem {
   name: string;
@@ -55,8 +57,23 @@ const Navbar = () => {
   const handleLinkClick = (href: string) => {
     setCurrentLink(href);
   };
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push("/services");
+  };
 
   const { user } = useAuth();
+
+  const [isDropdownVisible, setDropdownVisible] = useState(false);
+
+  const handleMouseEnter = () => {
+    setDropdownVisible(true);
+  };
+
+  const handleMouseLeave = () => {
+    setDropdownVisible(false);
+  };
 
   return (
     <Disclosure as="nav" className="navbar">
@@ -78,9 +95,9 @@ const Navbar = () => {
 
               {/* LINKS */}
 
-              <div className="hidden lg:block m-auto">
-                <div className="grid-cols-6">
-                  {navigation.map((item) => (
+              <div className="hidden lg:block m-auto ">
+                <div className="grid-cols-6 ">
+                  {/* {navigation.map((item) => (
                     <CustomLink
                       key={item.name}
                       href={item.href}
@@ -98,7 +115,85 @@ const Navbar = () => {
                         {item.name}
                       </span>
                     </CustomLink>
-                  ))}
+                  ))} */}
+
+                  <button
+                    data-collapse-toggle="navbar-dropdown"
+                    type="button"
+                    className="inline-flex items-center p-2 ms-3 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-dropdown"
+                    aria-expanded="false"
+                  >
+                    <span className="sr-only">Open main menu</span>
+                    <svg
+                      className="w-5 h-5"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 17 14"
+                    >
+                      <path
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M1 1h15M1 7h15M1 13h15"
+                      />
+                    </svg>
+                  </button>
+                  <div
+                    className=" w-full md:block md:w-auto"
+                    id="navbar-dropdown"
+                  >
+                    <ul className="flex flex-col font-medium p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:mt-0 md:text-sm  md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 md:space-x-8 md:rtl:space-x-reverse">
+                      <li>
+                        <a
+                          href="/"
+                          className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent"
+                          aria-current="page"
+                        >
+                          Home
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/about"
+                          className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent"
+                          aria-current="page"
+                        >
+                          About
+                        </a>
+                      </li>
+                      <li>
+                        <ServicesDialog />
+                      </li>
+
+                      <li>
+                        <a
+                          href="/gaming"
+                          className="block py-2 px-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                        >
+                          Gaming
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="leader-board"
+                          className="block py-2 px-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                        >
+                          NTG-LeaderBoard
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/contact"
+                          className="block py-2 px-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                        >
+                          Contact
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>

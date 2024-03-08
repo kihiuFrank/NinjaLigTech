@@ -49,7 +49,7 @@ const winnersData: TableDataType[] = [
 const page = () => {
   return (
     <div id="leader-board">
-      <div className="bg-gray-blue">
+      <div className=" bg-lightkblue">
         <div className="mx-auto max-w-7xl pb-12 pt-8 lg:pt-14  px-6 ">
           <div className="  flex justify-center items-center flex-col text-center lg:mx-8 sm:mx-2">
             <h2 className="text-lg lg:text-2xl  my-1.5 pt-0 px-2 pb-2 font-['Blanka'] text-[2rem] font-bold  tracking-[4px] rounded-lg bg-[rgba(255,255,255,0.8)] shadow-[0_0_4px_rgba(50,69,107,0.2)] md:text-[1rem]">
@@ -68,7 +68,7 @@ const page = () => {
         </div>
       </div>
 
-      <div className="bg-lightkblue">
+      <div className="bg-gray-blue">
         <Table />
       </div>
     </div>

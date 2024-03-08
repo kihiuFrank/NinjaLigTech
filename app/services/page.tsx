@@ -36,7 +36,7 @@ const page = () => {
         </div>
       </div>
 
-      <div className="bg-white ">
+      <div className="bg-white" id="sv-1">
         <div className="mx-auto max-w-7xl pb-12 pt-8 lg:pt-0 px-6  ">
           <div className="grid grid-cols-1 lg:grid-cols-12 space-x-1">
             <div className="col-span-6 flex flex-col justify-evenly">
@@ -93,7 +93,7 @@ const page = () => {
         </div>
       </div>
 
-      <div className="bg-paleblue ">
+      <div className="bg-paleblue " id="sv-2">
         <div className="mx-auto max-w-7xl pb-12 pt-8 lg:pt-0 px-6  ">
           <div className="grid grid-cols-1 lg:grid-cols-12 space-x-1">
             <div className="col-span-6 flex flex-col justify-evenly">
@@ -152,7 +152,7 @@ const page = () => {
         </div>
       </div>
 
-      <div className="bg-gray-blue ">
+      <div className="bg-gray-blue " id="sv-3">
         <div className="mx-auto max-w-7xl pb-12 pt-8 lg:pt-0 px-6  ">
           <div className="grid grid-cols-1 lg:grid-cols-12 space-x-1">
             <div className="col-span-6 flex flex-col justify-evenly">
@@ -205,7 +205,7 @@ const page = () => {
         </div>
       </div>
 
-      <div className="bg-white ">
+      <div className="bg-white " id="sv-4">
         <div className="mx-auto max-w-7xl pb-12 pt-8 lg:pt-0 px-6  ">
           <div className="grid grid-cols-1 lg:grid-cols-12 space-x-1">
             <div className="col-span-6 flex flex-col justify-evenly">
@@ -263,7 +263,7 @@ const page = () => {
         </div>
       </div>
 
-      <div className="bg-paleblue ">
+      <div className="bg-paleblue " id="sv-5">
         <div className="mx-auto max-w-7xl pb-12 pt-8 lg:pt-0 px-6  ">
           <div className="grid grid-cols-1 lg:grid-cols-12 space-x-1">
             <div className="col-span-6 flex flex-col justify-evenly">
@@ -320,7 +320,7 @@ const page = () => {
         </div>
       </div>
 
-      <div className="bg-gray-blue ">
+      <div className="bg-gray-blue " id="sv-6">
         <div className="mx-auto max-w-7xl pb-12 pt-8 lg:pt-0 px-6  ">
           <div className="grid grid-cols-1 lg:grid-cols-12 space-x-1">
             <div className="col-span-6 flex flex-col justify-evenly">
@@ -382,7 +382,7 @@ const page = () => {
         </div>
       </div>
 
-      <div className="bg-white ">
+      <div className="bg-white " id="sv-7">
         <div className="mx-auto max-w-7xl pb-12 pt-8 lg:pt-0 px-6  ">
           <div className="grid grid-cols-1 lg:grid-cols-12 space-x-1">
             <div className="col-span-6 flex flex-col justify-evenly">
@@ -431,7 +431,7 @@ const page = () => {
         </div>
       </div>
 
-      <div className="bg-paleblue ">
+      <div className="bg-paleblue " id="sv-8">
         <div className="mx-auto max-w-7xl pb-12 pt-8 lg:pt-0 px-6  ">
           <div className="grid grid-cols-1 lg:grid-cols-12 space-x-1">
             <div className="col-span-6 flex flex-col justify-evenly">
@@ -503,7 +503,7 @@ const page = () => {
         </div>
       </div>
 
-      <div className="bg-gray-blue ">
+      <div className="bg-gray-blue " id="sv-9">
         <div className="mx-auto max-w-7xl pb-12 pt-8 lg:pt-0 px-6  ">
           <div className="grid grid-cols-1 lg:grid-cols-12 space-x-1">
             <div className="col-span-6 flex flex-col justify-evenly">
@@ -558,7 +558,7 @@ const page = () => {
         </div>
       </div>
 
-      <div className="bg-white ">
+      <div className="bg-white " id="sv-10">
         <div className="mx-auto max-w-7xl pb-12 pt-8 lg:pt-0 px-6  ">
           <div className="grid grid-cols-1 lg:grid-cols-12 space-x-1">
             <div className="col-span-6 flex flex-col justify-evenly">
@@ -616,7 +616,7 @@ const page = () => {
         </div>
       </div>
 
-      <div className="bg-paleblue ">
+      <div className="bg-paleblue " id="sv-11">
         <div className="mx-auto max-w-7xl pb-12 pt-8 lg:pt-0 px-6  ">
           <div className="grid grid-cols-1 lg:grid-cols-12 space-x-1">
             <div className="col-span-6 flex flex-col justify-evenly">
@@ -665,7 +665,7 @@ const page = () => {
         </div>
       </div>
 
-      <div className="bg-gray-blue ">
+      <div className="bg-gray-blue " id="sv-12">
         <div className="mx-auto max-w-7xl pb-12 pt-8 lg:pt-0 px-6  ">
           <div className="grid grid-cols-1 lg:grid-cols-12 space-x-1">
             <div className="col-span-6 flex flex-col justify-evenly">
@@ -718,7 +718,7 @@ const page = () => {
         </div>
       </div>
 
-      <div className="bg-white ">
+      <div className="bg-white " id="sv-13">
         <div className="mx-auto max-w-7xl pb-12 pt-8 lg:pt-0 px-6  ">
           <div className="grid grid-cols-1 lg:grid-cols-12 space-x-1">
             <div className="col-span-6 flex flex-col justify-evenly">
@@ -768,7 +768,7 @@ const page = () => {
         </div>
       </div>
 
-      <div className="bg-paleblue ">
+      <div className="bg-paleblue " id="sv-14">
         <div className="mx-auto max-w-7xl pb-12 pt-8 lg:pt-0 px-6  ">
           <div className="grid grid-cols-1 lg:grid-cols-12 space-x-1">
             <div className="col-span-6 flex flex-col justify-evenly">
@@ -822,7 +822,7 @@ const page = () => {
         </div>
       </div>
 
-      <div className="bg-gray-blue ">
+      <div className="bg-gray-blue " id="sv-15">
         <div className="mx-auto max-w-7xl pb-12 pt-8 lg:pt-0 px-6  ">
           <div className="grid grid-cols-1 lg:grid-cols-12 space-x-1">
             <div className="col-span-6 flex flex-col justify-evenly">
@@ -873,7 +873,7 @@ const page = () => {
         </div>
       </div>
 
-      <div className="bg-white ">
+      <div className="bg-white " id="sv-16">
         <div className="mx-auto max-w-7xl pb-12 pt-8 lg:pt-0 px-6  ">
           <div className="grid grid-cols-1 lg:grid-cols-12 space-x-1">
             <div className="col-span-6 flex flex-col justify-evenly">
@@ -927,7 +927,7 @@ const page = () => {
         </div>
       </div>
 
-      <div className="bg-paleblue ">
+      <div className="bg-paleblue " id="sv-17">
         <div className="mx-auto max-w-7xl pb-12 pt-8 lg:pt-0 px-6  ">
           <div className="grid grid-cols-1 lg:grid-cols-12 space-x-1">
             <div className="col-span-6 flex flex-col justify-evenly">
@@ -977,7 +977,7 @@ const page = () => {
         </div>
       </div>
 
-      <div className="bg-gray-blue ">
+      <div className="bg-gray-blue " id="sv-18">
         <div className="mx-auto max-w-7xl pb-12 pt-8 lg:pt-0 px-6  ">
           <div className="grid grid-cols-1 lg:grid-cols-12 space-x-1">
             <div className="col-span-6 flex flex-col justify-evenly">
@@ -1030,7 +1030,7 @@ const page = () => {
         </div>
       </div>
 
-      <div className="bg-white ">
+      <div className="bg-white " id="sv-19">
         <div className="mx-auto max-w-7xl pb-12 pt-8 lg:pt-0 px-6  ">
           <div className=" flex flex-col items-center justify-evenly">
             <h2 className="text-Blueviolet text-sm lg:text-base font-semibold">
