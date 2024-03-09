@@ -1,6 +1,18 @@
+"use client";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const Banner = () => {
+  const router = useRouter();
+
+  const handleContact = () => {
+    router.push("/contact");
+  };
+
+  const handleGaming = () => {
+    router.push("/gaming");
+  };
+
   return (
     <div id="home-section" className="bg-lightkblue  ">
       <div className="mx-auto max-w-7xl sm:pb-24 pt-8 px-6">
@@ -17,13 +29,24 @@ const Banner = () => {
                 Get 30% off on first deal
               </h3>
             </div>
-            <h1 className="text-midnightblue text-4xl sm:text-5xl font-semibold text-center lg:text-start lh-120 pt-5 lg:pt-0">
-              Taking care of all your engineering needs.
+            <h1 className="text-midnightblue text-2xl lg:text-4xl font-semibold text-center lg:text-start lh-120 pt-5 lg:pt-0">
+              World-Class Digital Solutions <br />
+              On-Time & In-Budget
             </h1>
-            <h2 className="text-charcoal text-lg font-normal text-center lg:text-start opacity-75 pt-5 lg:pt-0">
-              Hire the best Software Developers and consultants ready to build
-              solutions for your business.
+            <h2 className="text-charcoal text-lg font-normal text-center lg:text-start opacity-75 pt-5 lg:pt-8">
+              Being a top Mobile app and Web development company, we help
+              Startups, Mid-Size, and Enterprise businesses to get their digital
+              products done the right way on time, in budget.
             </h2>
+
+            <div className="flex items-center justify-center pt-8 lg:pt-4 pb-8 lg:pb-4 ">
+              <button
+                onClick={handleContact}
+                className="p-3 lg:p-5 bg-transparent hover:bg-ultramarine duration-150 ease-in-out shadow-2xl rounded-full text-gray-500 hover:text-white "
+              >
+                GET A QUOTE IN 24 HOURS
+              </button>
+            </div>
 
             <div className="relative flex py-5 items-center">
               <div className="flex-grow border-t border-gray-400"></div>
@@ -32,37 +55,17 @@ const Banner = () => {
             </div>
 
             <h3 className="text-charcoal text-lg font-normal text-center lg:text-start opacity-75 pt-0 lg:pt-0">
-              Join our gaming community and compete for cash prizes. For more
-              info, join our{" "}
-              <a
-                className="text-kellygreen text-md font-semibold text-center lg:text-start"
-                href="https://chat.whatsapp.com/FQhWtNuwHll2bcSvO1ciJL"
-              >
-                Whatsapp Community.
-              </a>
+              Join NinjaTech Gaming (NTG), the leading gamers platform in Africa
+              for online competitive games and compete for cash prizes.
             </h3>
 
-            <div className="relative text-white focus-within:text-white flex flex-row-reverse input-shadow rounded-full pt-16 lg:pt-8">
-              <input
-                type="Email address"
-                name="q"
-                className="py-6 lg:py-8 text-lg w-full text-black opacity-75 rounded-full pl-8 focus:outline-none focus:text-black"
-                placeholder="search..."
-                autoComplete="off"
-              />
-              <div className="absolute inset-y-0 right-0 flex items-center pr-2 pt-16 lg:pt-8">
-                <button
-                  type="submit"
-                  className="p-3 lg:p-5 focus:outline-none focus:shadow-outline bg-ultramarine hover:bg-midnightblue duration-150 ease-in-out rounded-full"
-                >
-                  <Image
-                    src={"/assets/banner/search.svg"}
-                    alt="inputicon"
-                    width={30}
-                    height={30}
-                  />
-                </button>
-              </div>
+            <div className="flex items-center justify-center pt-8 lg:pt-4 pb-8 lg:pb-4 ">
+              <button
+                onClick={handleGaming}
+                className="p-3 lg:p-5 bg-transparent hover:bg-ultramarine duration-150 ease-in-out shadow-2xl rounded-full text-gray-500 hover:text-white "
+              >
+                JOIN OUR GAMERS COMMUNITY
+              </button>
             </div>
 
             <div className="flex items-center justify-between grid-cols-3 pt-16 lg:pt-8">

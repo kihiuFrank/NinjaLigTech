@@ -77,6 +77,16 @@ const page = () => {
                 tournaments the way so many competitive players have! We
                 prioritize community before company, company before team and
                 team before individuals.
+                <br /> <br />
+                Join our gaming community and compete for cash prizes. For more
+                info, join our{" "}
+                <a
+                  className="text-kellygreen text-md font-semibold text-center lg:text-start"
+                  href="https://chat.whatsapp.com/FQhWtNuwHll2bcSvO1ciJL"
+                >
+                  Whatsapp Community,
+                </a>{" "}
+                and other socials below.
               </h3>
 
               <div className="text-charcoal text-lg font-normal flex justify-center lg:text-start opacity-90 pt-5 lg:pt-0 ">

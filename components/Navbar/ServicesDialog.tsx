@@ -26,7 +26,7 @@ const ServicesDialog = () => {
   const pathname = usePathname();
 
   return (
-    <div className="absolute inset-y-0 right-0 flex items-center  sm:static sm:inset-auto">
+    <div className="absolute inset-y-0 right-0 flex items-center  sm:static sm:inset-auto ">
       <div
         className="hidden lg:block "
         onClick={handleClick}
@@ -63,7 +63,7 @@ const ServicesDialog = () => {
         {isDropdownVisible && (
           <div
             id="dropdownNavbar"
-            className="flex items-center justify-center p-4  dropDownMenu absolute z-10 bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600 w-2/3 "
+            className="bg-lightkblue flex items-center justify-center p-4  dropDownMenu absolute z-10  divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600 w-2/3 "
           >
             <ul
               className="py-2 grid grid-cols-4 text-sm text-gray-700 dark:text-gray-200"
