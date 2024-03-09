@@ -89,7 +89,7 @@ const Navbar = () => {
                 <Image
                   width={100}
                   height={100}
-                  className=" h-full w-30  "
+                  className="h-30 w-40"
                   src={"/assets/logo/logo.png"}
                   alt="design-logo"
                 />
