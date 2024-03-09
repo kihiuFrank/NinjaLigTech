@@ -112,9 +112,20 @@ const Projects = () => {
         <div className="mx-auto max-w-7xl pb-12 pt-8 lg:pt-0 px-6  ">
           <div className="grid grid-cols-1 lg:grid-cols-12 space-x-1">
             <div className="col-span-6 flex flex-col justify-evenly">
-              <h1 className=" block lg:hidden text-midnightblue text-lg lg:text-2xl font-semibold">
-                Crowdfunding Platform
-              </h1>
+              <div className=" block lg:hidden ">
+                <div className="flex flex-shrink-0 items-center gap-2">
+                  <Image
+                    width={100}
+                    height={100}
+                    className="h-10 w-10"
+                    src={"/assets/projects/crowdFunding.svg"}
+                    alt="design-logo"
+                  />
+                  <h1 className="text-midnightblue text-lg lg:text-2xl font-semibold ">
+                    Crowdfunding Platform
+                  </h1>
+                </div>
+              </div>
               <div className="col-span-6 p-4 sm:p-10 flex justify-center ">
                 <img
                   className="rounded-lg "
@@ -124,9 +135,20 @@ const Projects = () => {
             </div>
 
             <div className="col-span-6 p-4  flex flex-col justify-evenly  ">
-              <h1 className="hidden lg:block text-midnightblue text-lg lg:text-2xl font-semibold ">
-                Crowdfunding Platform
-              </h1>
+              <div className=" hidden lg:block ">
+                <div className="flex flex-shrink-0 items-center gap-2">
+                  <Image
+                    width={100}
+                    height={100}
+                    className="h-10 w-10"
+                    src={"/assets/projects/crowdFunding.svg"}
+                    alt="design-logo"
+                  />
+                  <h1 className="text-midnightblue text-lg lg:text-2xl font-semibold ">
+                    Crowdfunding Platform
+                  </h1>
+                </div>
+              </div>
               <p className="text-charcoal text-sm lg:text-base font-curlfont tracking-wide text-start lg:text-start opacity-75 pt-2 lg:pt-2 ">
                 This is a Decentralized application (DAPP) that demonstrates an
                 application for people to get funding for their projects or
