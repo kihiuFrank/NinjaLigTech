@@ -16,6 +16,7 @@ const navigation: NavigationItem[] = [
   { name: "Home", href: "/", current: true },
   { name: "About", href: "/about", current: false },
   { name: "Services", href: "/services", current: false },
+  { name: "Our Work", href: "/projects", current: false },
   { name: "Gaming", href: "/gaming", current: false },
   { name: "NTG-LeaderBoard", href: "/leader-board", current: false },
   { name: "Contact", href: "/contact", current: false },

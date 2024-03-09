@@ -28,7 +28,7 @@ const page = () => {
               You Envision, We Deliver
             </h1>
             <p className="text-gray-200 text-sm lg:text-lg font-curlfont tracking-wide text-start lg:text-start opacity-75 pt-8 lg:pt-12 px-2 md:px-32  ">
-              Groovy is an evolving family of experienced, dedicated,
+              NinjaLig Technologies is an evolving family of experienced, dedicated,
               determined, and skilled resources who strives to see you and your
               product grow and achieve new heights.
             </p>
