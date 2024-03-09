@@ -108,7 +108,7 @@ const Projects = () => {
         </div>
       </div>
 
-      <div className="bg-paleblue " id="sv-2">
+      <div className="bg-paleblue " id="pr-2">
         <div className="mx-auto max-w-7xl pb-12 pt-8 lg:pt-0 px-6  ">
           <div className="grid grid-cols-1 lg:grid-cols-12 space-x-1">
             <div className="col-span-6 flex flex-col justify-evenly">
@@ -182,6 +182,59 @@ const Projects = () => {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-gray-blue" id="pr-1">
+        <div className="mx-auto max-w-7xl pb-12 pt-8 lg:pt-0 px-6  ">
+          <div className="grid grid-cols-1 lg:grid-cols-12 space-x-1">
+            <div className="col-span-6 flex flex-col justify-evenly">
+              <div className="flex flex-shrink-0 items-center gap-2">
+                <Image
+                  width={100}
+                  height={100}
+                  className="h-10 w-10"
+                  src={"/assets/projects/ceo.ico"}
+                  alt="design-logo"
+                />
+                <h1 className="text-midnightblue text-lg lg:text-2xl font-semibold ">
+                  Kihiu&apos;s Profile
+                </h1>
+              </div>
+
+              <p className="text-charcoal text-sm lg:text-base font-curlfont tracking-wide text-start lg:text-start opacity-75 pt-2 lg:pt-2 ">
+                SaveAKid is a donations platform aiming to provide support for
+                children and young people each year by creating a space where
+                charity organizations and children homes are connected with
+                donors from all over the world.
+              </p>
+
+              <div className="flex flex-col justify-center p-4 gap-4">
+                <p className="flex justify-center">Technology Stack</p>
+                <div className="flex justify-center p-1 gap-4">
+                  <div className="text-Blueviolet   hover:text-semiblueviolet">
+                    <TbBrandNextjs />
+                  </div>
+                  <div className="text-Blueviolet   hover:text-semiblueviolet">
+                    <FaReact />
+                  </div>
+                  <div className="text-Blueviolet  hover:text-semiblueviolet">
+                    <IoLogoJavascript />
+                  </div>
+                  <div className="text-Blueviolet  hover:text-semiblueviolet">
+                    <SiTailwindcss />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-span-6 p-4 sm:p-10 flex justify-center ">
+              <img
+                className="rounded-lg "
+                src="/assets/projects/projects03.png"
+              />
             </div>
           </div>
         </div>
