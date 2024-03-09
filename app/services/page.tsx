@@ -28,9 +28,9 @@ const page = () => {
               You Envision, We Deliver
             </h1>
             <p className="text-gray-200 text-sm lg:text-lg font-curlfont tracking-wide text-start lg:text-start opacity-75 pt-8 lg:pt-12 px-2 md:px-32  ">
-              NinjaLig Technologies is an evolving family of experienced, dedicated,
-              determined, and skilled resources who strives to see you and your
-              product grow and achieve new heights.
+              NinjaLig Technologies is an evolving family of experienced,
+              dedicated, determined, and skilled resources who strives to see
+              you and your product grow and achieve new heights.
             </p>
           </div>
         </div>
@@ -1031,7 +1031,7 @@ const page = () => {
       </div>
 
       <div className="bg-white " id="sv-19">
-        <div className="mx-auto max-w-7xl pb-12 pt-8 lg:pt-0 px-6  ">
+        <div className="mx-auto max-w-7xl pb-12 pt-8 lg:pt-4 px-6  ">
           <div className=" flex flex-col items-center justify-evenly">
             <h2 className="text-Blueviolet text-sm lg:text-base font-semibold">
               Our Process

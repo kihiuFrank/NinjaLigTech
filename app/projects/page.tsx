@@ -1,8 +1,9 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { BiSolidRightArrowCircle } from "react-icons/bi";
-import { FaReact, FaAndroid, FaApple, FaJava } from "react-icons/fa";
+import { FaReact, FaHardHat, FaAndroid, FaApple, FaJava } from "react-icons/fa";
 import { IoLogoJavascript, IoLogoIonic } from "react-icons/io";
 import {
   SiSolidity,
@@ -187,7 +188,142 @@ const Projects = () => {
         </div>
       </div>
 
-      <div className="bg-gray-blue" id="pr-1">
+      <div className="bg-gray-blue" id="pr-3">
+        <div className="mx-auto max-w-7xl pb-12 pt-8 lg:pt-0 px-6  ">
+          <div className="grid grid-cols-1 lg:grid-cols-12 space-x-1">
+            <div className="col-span-6 flex flex-col justify-evenly">
+              <div className="flex flex-shrink-0 items-center gap-2">
+                <Image
+                  width={100}
+                  height={100}
+                  className="h-10 w-10"
+                  src={"/assets/projects/shibainu.png"}
+                  alt="design-logo"
+                />
+                <h1 className="text-midnightblue text-lg lg:text-2xl font-semibold ">
+                  Random IPFS NFTs
+                </h1>
+              </div>
+
+              <p className="text-charcoal text-sm lg:text-base font-curlfont tracking-wide text-start lg:text-start opacity-75 pt-2 lg:pt-2 ">
+                We created 3 different kinds of NFTs.
+              </p>
+              <ol className="list-decimal list-inside marker:text-blue-500 text-charcoal text-sm lg:text-base font-curlfont tracking-wide text-start lg:text-start opacity-75 pt-2 lg:pt-2 ">
+                <li>A Basic NFT</li>
+                <li>
+                  IPFS Hosted NFT that uses Randomness to generate a unique NFT
+                </li>
+                <li>
+                  SVG NFT (Hosted 100% on-chain) that uses price feeds to be
+                  dynamic
+                </li>
+              </ol>
+
+              <div className="flex flex-col justify-center p-4 gap-4">
+                <p className="flex justify-center">Technology Stack</p>
+                <div className="flex justify-center p-1 gap-4">
+                  <div className="text-Blueviolet   hover:text-semiblueviolet">
+                    <SiSolidity />
+                  </div>
+                  <div className="text-Blueviolet   hover:text-semiblueviolet">
+                    <FaHardHat />
+                  </div>
+                  <div className="text-Blueviolet   hover:text-semiblueviolet">
+                    <FaReact />
+                  </div>
+                  <div className="text-Blueviolet  hover:text-semiblueviolet">
+                    <IoLogoJavascript />
+                  </div>
+                  <div className="text-Blueviolet  hover:text-semiblueviolet">
+                    <SiTailwindcss />
+                  </div>
+                  <div className="text-Blueviolet  hover:text-semiblueviolet">
+                    <SiBlockchaindotcom />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-span-6 p-4 sm:p-10 flex justify-center ">
+              <img
+                className="rounded-lg "
+                src="/assets/projects/projects06.png"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-white " id="pr-4">
+        <div className="mx-auto max-w-7xl pb-12 pt-8 lg:pt-0 px-6  ">
+          <div className="grid grid-cols-1 lg:grid-cols-12 space-x-1">
+            <div className="col-span-6 flex flex-col justify-evenly">
+              <div className=" block lg:hidden ">
+                <div className="flex flex-shrink-0 items-center gap-2">
+                  <Image
+                    width={100}
+                    height={100}
+                    className="h-10 w-10"
+                    src={"/assets/projects/crowdFunding.svg"}
+                    alt="design-logo"
+                  />
+                  <h1 className="text-midnightblue text-lg lg:text-2xl font-semibold ">
+                    Ecommerce Smart Contract
+                  </h1>
+                </div>
+              </div>
+              <div className="col-span-6 p-4 sm:p-10 flex justify-center ">
+                <img
+                  className="rounded-lg "
+                  src="/assets/projects/projects05.png"
+                />
+              </div>
+            </div>
+
+            <div className="col-span-6 p-4  flex flex-col justify-evenly  ">
+              <div className=" hidden lg:block ">
+                <div className="flex flex-shrink-0 items-center gap-2">
+                  <Image
+                    width={100}
+                    height={100}
+                    className="h-10 w-10"
+                    src={"/assets/projects/projects04.png"}
+                    alt="design-logo"
+                  />
+                  <h1 className="text-midnightblue text-lg lg:text-2xl font-semibold ">
+                    Ecommerce Smart Contract
+                  </h1>
+                </div>
+              </div>
+              <p className="text-charcoal text-sm lg:text-base font-curlfont tracking-wide text-start lg:text-start opacity-75 pt-2 lg:pt-2 ">
+                This is a purely back-end project. The use of smart contracts in
+                e-commerce has the potential to disrupt the traditional
+                e-commerce industry by introducing a new level of trust and
+                efficiency. As more and more merchants join smart contract-based
+                online marketplaces, it could lead to a shift away from
+                traditional online marketplaces and towards decentralized,
+                trustless marketplaces.
+              </p>
+              <div className="flex flex-col justify-center p-4 gap-4">
+                <p className="flex justify-center">Technology Stack</p>
+                <div className="flex justify-center p-1 gap-4">
+                  <div className="text-Blueviolet  hover:text-semiblueviolet">
+                    <SiBlockchaindotcom />
+                  </div>
+                  <div className="text-Blueviolet   hover:text-semiblueviolet">
+                    <SiSolidity />
+                  </div>
+                  <div className="text-Blueviolet  hover:text-semiblueviolet">
+                    <IoLogoJavascript />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-paleblue" id="pr-5">
         <div className="mx-auto max-w-7xl pb-12 pt-8 lg:pt-0 px-6  ">
           <div className="grid grid-cols-1 lg:grid-cols-12 space-x-1">
             <div className="col-span-6 flex flex-col justify-evenly">
@@ -235,6 +371,25 @@ const Projects = () => {
                 className="rounded-lg "
                 src="/assets/projects/projects03.png"
               />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-white h-96 flex items-center " id="pr-6">
+        <div className="mx-auto max-w-7xl pb-12 pt-8 lg:pt-4 px-6 ">
+          <div className=" flex flex-col items-center justify-evenly gap-8">
+            <div>
+              <h1 className="text-midnightblue font-curlfont text-lg lg:text-2xl font-semibold tracking-widest">
+                Looking For Something Similar?
+              </h1>
+              <h2 className="text-gray-500 text-xs lg:text-sm text-center">
+                Hit the button below and Contact Us for Consultation
+              </h2>
+            </div>
+
+            <div className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-800 w-fill hover:bg-Blueviolet focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
+              <Link href={"/contact"}>GET FREE CONSULTATION</Link>
             </div>
           </div>
         </div>
