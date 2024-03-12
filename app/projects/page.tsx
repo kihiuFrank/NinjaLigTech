@@ -264,7 +264,7 @@ const Projects = () => {
                     width={100}
                     height={100}
                     className="h-10 w-10"
-                    src={"/assets/projects/crowdFunding.svg"}
+                    src={"/assets/projects/projects04.png"}
                     alt="design-logo"
                   />
                   <h1 className="text-midnightblue text-lg lg:text-2xl font-semibold ">
@@ -323,7 +323,7 @@ const Projects = () => {
         </div>
       </div>
 
-      <div className="bg-paleblue" id="pr-5">
+      <div className="bg-lightkblue" id="pr-5">
         <div className="mx-auto max-w-7xl pb-12 pt-8 lg:pt-0 px-6  ">
           <div className="grid grid-cols-1 lg:grid-cols-12 space-x-1">
             <div className="col-span-6 flex flex-col justify-evenly">
@@ -341,10 +341,11 @@ const Projects = () => {
               </div>
 
               <p className="text-charcoal text-sm lg:text-base font-curlfont tracking-wide text-start lg:text-start opacity-75 pt-2 lg:pt-2 ">
-                SaveAKid is a donations platform aiming to provide support for
-                children and young people each year by creating a space where
-                charity organizations and children homes are connected with
-                donors from all over the world.
+                Kihiu is our CEO here at Ninjalig Technologies and a digital
+                polymath — constantly evolving in performing computer
+                software&apos;s complex design, analysis, development, testing,
+                and debugging. Our competent team, can create you a personal or
+                company profile of your liking too.
               </p>
 
               <div className="flex flex-col justify-center p-4 gap-4">

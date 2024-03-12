@@ -36,7 +36,7 @@ const Banner = () => {
             <h2 className="text-charcoal text-lg font-normal text-center lg:text-start opacity-75 pt-5 lg:pt-8">
               Being a top Mobile app and Web development company, we help
               Startups, Mid-Size, and Enterprise businesses to get their digital
-              products done the right way on time, in budget.
+              products done the right way, on time, and within budget.
             </h2>
 
             <div className="flex items-center justify-center pt-8 lg:pt-4 pb-8 lg:pb-4 ">
