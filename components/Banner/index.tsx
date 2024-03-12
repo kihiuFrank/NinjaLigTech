@@ -42,7 +42,7 @@ const Banner = () => {
             <div className="flex items-center justify-center pt-8 lg:pt-4 pb-8 lg:pb-4 ">
               <button
                 onClick={handleContact}
-                className="p-3 lg:p-5 bg-transparent hover:bg-ultramarine duration-150 ease-in-out shadow-2xl rounded-full text-gray-500 hover:text-white "
+                className="p-3 bg-cornflowerblue hover:bg-ultramarine duration-150 ease-in-out shadow-2xl rounded-full text-gray-200 hover:text-white "
               >
                 GET A QUOTE IN 24 HOURS
               </button>
@@ -62,7 +62,7 @@ const Banner = () => {
             <div className="flex items-center justify-center pt-8 lg:pt-4 pb-8 lg:pb-4 ">
               <button
                 onClick={handleGaming}
-                className="p-3 lg:p-5 bg-transparent hover:bg-ultramarine duration-150 ease-in-out shadow-2xl rounded-full text-gray-500 hover:text-white "
+                className="p-3 bg-cornflowerblue hover:bg-ultramarine duration-150 ease-in-out shadow-2xl rounded-full text-gray-200 hover:text-white "
               >
                 JOIN OUR GAMERS COMMUNITY
               </button>

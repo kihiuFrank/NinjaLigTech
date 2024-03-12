@@ -67,12 +67,12 @@ const page = () => {
               About Us
             </h1>
             <p className="text-gray-200 text-sm lg:text-lg font-curlfont tracking-wide text-start lg:text-start opacity-75 pt-8 lg:pt-12 px-2 md:px-32  ">
-              NinjaLigTech is the partner of choice for building web-based and
-              mobile app products for businesses of all sizes. Should they be
-              scaled-up or developed from scratch - we will manage with it. Our
-              remote agile teams of engineers immerse themselves in your
-              project, maintaining your company culture and working in line with
-              your strategic goals.
+              NinjaLig Technologies is the partner of choice for building
+              web-based and mobile app products for businesses of all sizes.
+              Should they be scaled-up or developed from scratch - we will
+              manage with it. Our remote agile teams of engineers immerse
+              themselves in your project, maintaining your company culture and
+              working in line with your strategic goals.
               <br />
               <br />
               Besides programming, we also have{" "}
