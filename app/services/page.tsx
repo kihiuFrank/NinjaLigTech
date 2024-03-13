@@ -3,7 +3,7 @@ import React from "react";
 import ComingSoon from "../../components/ComingSoon/ComingSoon";
 
 import Games from "@/components/Games/index";
-import Disclaimer from "../legal/page";
+import Disclaimer from "../legal-disclaimer/page";
 import Link from "next/link";
 import Image from "next/image";
 import Mentor from "@/components/Mentor";

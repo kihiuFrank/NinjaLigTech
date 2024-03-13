@@ -2,13 +2,19 @@ import React from "react";
 
 const Disclaimer = () => {
   return (
-    <div className="bg-gray-blue">
+    <div className="bg-lightkblue">
       <div id="LegalDisclaimer" className="mx-auto max-w-7xl pb-12 pt-4  px-6 ">
+        <div className="flex flex-col items-center p-4 lg:p-8 ">
+          <h1 className="text-midnightblue pt-12 lg:pt-20 text-2xl lg:text-4xl  font-semibold mb-5 sm:mb-0 tracking-widest">
+            LEGAL DISCLAIMER.
+          </h1>
+          <p className="text-charcoal text-xs lg:text-sm font-normal text-start lg:text-start opacity-75 pt-4 pb-2 lg:pb-4">
+            Last Updated May 25, 2020
+          </p>
+        </div>
         <div className=" space-x-1">
           <div className="col-span-6 flex flex-col justify-evenly">
-            <h1 className="text-midnightblue text-lg lg:text-2xl pt-4 font-semibold mb-5 sm:mb-0">
-              LEGAL DISCLAIMER.
-            </h1>
+            <h1 className="text-midnightblue text-lg lg:text-2xl pt-4 font-semibold mb-5 sm:mb-0"></h1>
 
             <h2 className="text-midnightblue text-sm lg:text-md lg:text-lg font-semibold pt-2 lg:pt-4 ">
               GENERAL ONLINE TOURNAMENT RULES

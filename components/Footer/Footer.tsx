@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { Url } from "next/dist/shared/lib/router/router";
 
 interface ProductType {
   id: number;
@@ -30,17 +31,17 @@ const products: ProductType[] = [
   {
     id: 1,
     section: "Company",
-    link: ["About", "Careers", "Mobile", "Blog", "How we work?"],
+    link: ["About", "Services", "Projects", "Gaming", "Leader-Board"],
   },
   {
     id: 2,
     section: "Contact",
-    link: ["Help/FAQ", "Affiliates", "Partners"],
+    link: ["Contact"],
   },
   {
     id: 3,
     section: "More",
-    link: ["Fees", "Technical Solutions &", "Gaming"],
+    link: ["Privacy-Policy", "Legal-Disclaimer", "Terms-Conditions"],
   },
 ];
 
@@ -92,7 +93,7 @@ const footer = () => {
               {product.link.map((link: string, index: number) => (
                 <li key={index} className="mb-5">
                   <Link
-                    href="/"
+                    href={`/${link.toLowerCase()}`}
                     className="text-darkgray text-base font-normal mb-6 space-links"
                   >
                     {link}
@@ -113,21 +114,15 @@ const footer = () => {
         </h4>
         <div className="flex gap-5 mt-5 md:mt-0 justify-center md:justify-start">
           <h4 className="text-dark-red opacity-75 text-sm font-normal">
-            <Link href="/" target="_blank">
-              Privacy policy
-            </Link>
+            <Link href="/privacy-policy">Privacy policy</Link>
           </h4>
           <div className="h-5 bg-dark-red opacity-25 w-0.5"></div>
           <h4 className="text-dark-red opacity-75 text-sm font-normal">
-            <Link href="/" target="_blank">
-              Terms & conditions
-            </Link>
+            <Link href="/terms-conditions">Terms & conditions</Link>
           </h4>
           <div className="h-5 bg-dark-red opacity-25 w-0.5"></div>
           <h4 className="text-dark-red opacity-75 text-sm font-normal">
-            <Link href="/legal" target="_blank">
-              Legal Disclaimer
-            </Link>
+            <Link href="/legal-disclaimer">Legal Disclaimer</Link>
           </h4>
         </div>
       </div>
