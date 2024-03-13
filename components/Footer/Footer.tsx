@@ -15,13 +15,8 @@ interface socialLinks {
 
 const socialLinks: socialLinks[] = [
   {
-    imgSrc: "/assets/socials/facebook.svg",
-    link: "www.facebook.com",
-    width: 10,
-  },
-  {
-    imgSrc: "/assets/socials/insta.svg",
-    link: "www.instagram.com",
+    imgSrc: "/assets/socials/linkedin.svg",
+    link: "https://www.linkedin.com/company/ninjaligtech/",
     width: 14,
   },
   {
@@ -78,7 +73,7 @@ const footer = () => {
                     alt={items.imgSrc}
                     width={items.width}
                     height={2}
-                    className="sepiaa"
+                    className="sepiaa h-5 w-5"
                   />
                 </div>
               </Link>

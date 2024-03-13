@@ -4,7 +4,6 @@ import Disclaimer from "../legal/page";
 import Link from "next/link";
 import Image from "next/image";
 import GamingBanner from "@/components/GamingBanner";
-
 const page = () => {
   return (
     <div id="home-section">
