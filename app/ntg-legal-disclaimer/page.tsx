@@ -6,7 +6,7 @@ const Disclaimer = () => {
       <div id="LegalDisclaimer" className="mx-auto max-w-7xl pb-12 pt-4  px-6 ">
         <div className="flex flex-col items-center p-4 lg:p-8 ">
           <h1 className="text-midnightblue pt-12 lg:pt-20 text-2xl lg:text-4xl  font-semibold mb-5 sm:mb-0 tracking-widest">
-            LEGAL DISCLAIMER.
+            LEGAL DISCLAIMER. (NTG)
           </h1>
           <p className="text-charcoal text-xs lg:text-sm font-normal text-start lg:text-start opacity-75 pt-4 pb-2 lg:pb-4">
             Last Updated May 25, 2020
@@ -33,7 +33,7 @@ const Disclaimer = () => {
             </h2>
             <h3 className="text-charcoal text-xs lg:text-sm font-normal text-start lg:text-start opacity-75 pt-2 pb-2 lg:pb-4">
               Each individual tournament will be held on the scheduled dates
-              provided by NinjaTech Gaming LLC.
+              provided by NinjaTech Gaming.
             </h3>
 
             <h2 className="text-midnightblue text-sm lg:text-md lg:text-lg font-semibold pt-2 lg:pt-4 ">
@@ -50,7 +50,7 @@ const Disclaimer = () => {
               provide all necessary/requested information. Incomplete or more
               than one entries will see the participant as disqualified - one
               entry per person per tournament. All entries become the property
-              of CheckMate Gaming and will not be acknowledged or returned.
+              of NinjaTech Gaming and will not be acknowledged or returned.
               Please note that NinjaTech Gaming is not responsible for any lost,
               late, incomplete, or misdirected entries.
             </h3>
@@ -80,7 +80,7 @@ const Disclaimer = () => {
               FURTHER CONDITIONS
             </h2>
             <h3 className="text-charcoal text-xs lg:text-sm font-normal text-start lg:text-start opacity-75 pt-2 pb-2 lg:pb-4">
-              NinjaTech Gaming LLC. is not responsible for any
+              NinjaTech Gaming is not responsible for any
               incorrect/inaccurate information, whether caused by users of the
               site or by any of the equipment/programming associated with the
               site or in any tournament. Moreover by any technical or human
@@ -156,9 +156,7 @@ const Disclaimer = () => {
             </h2>
             <h3 className="text-charcoal text-xs lg:text-sm font-normal text-start lg:text-start opacity-75 pt-2 pb-2 lg:pb-4">
               Each winner is solely responsible for any and all applicable
-              taxes. Participants who win over $600 in prizes will receive an
-              IRS Form at the end of the calendar year and a copy of the form
-              will be filed with the IRS.
+              taxes. 
             </h3>
 
             <h2 className="text-midnightblue text-sm lg:text-md lg:text-lg font-semibold pt-2 lg:pt-4 ">

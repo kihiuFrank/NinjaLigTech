@@ -50,8 +50,8 @@ const Terms = () => {
                       Installation and Use.{" "}
                       <span className="text-charcoal text-xs lg:text-sm font-normal text-start lg:text-start opacity-75 pt-2 pb-2 lg:pb-4">
                         Licensee may install and use an unlimited number of
-                        copies of the Software solely for Licensee's business
-                        use.
+                        copies of the Software solely for Licensee&apos;s
+                        business use.
                       </span>
                     </li>
                   </ul>

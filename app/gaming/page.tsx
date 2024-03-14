@@ -1,6 +1,6 @@
 import React from "react";
 import Games from "@/components/Games/index";
-import Disclaimer from "../legal-disclaimer/page";
+import Disclaimer from "../ntg-legal-disclaimer/page";
 import Link from "next/link";
 import Image from "next/image";
 import GamingBanner from "@/components/GamingBanner";
