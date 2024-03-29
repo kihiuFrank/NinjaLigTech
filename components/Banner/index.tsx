@@ -55,7 +55,7 @@ const Banner = () => {
             </div>
 
             <h3 className="text-charcoal text-lg font-normal text-center lg:text-start opacity-75 pt-0 lg:pt-0">
-              Join NinjaTech Gaming (NTG), the leading gamers platform in Africa
+              Join Ninjalig Gamers (NLG), the leading gamers platform in Africa
               for online competitive games and compete for cash prizes.
             </h3>
 

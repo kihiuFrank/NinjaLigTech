@@ -41,7 +41,7 @@ const products: ProductType[] = [
   {
     id: 3,
     section: "More",
-    link: ["Privacy-Policy", "NTG-Legal-Disclaimer", "Terms-Conditions"],
+    link: ["Privacy-Policy", "NLG-Legal-Disclaimer", "Terms-Conditions"],
   },
 ];
 
@@ -122,7 +122,7 @@ const footer = () => {
           </h4>
           <div className="h-5 bg-dark-red opacity-25 w-0.5"></div>
           <h4 className="text-dark-red opacity-75 text-sm font-normal">
-            <Link href="/ntg-legal-disclaimer">NTG Legal Disclaimer</Link>
+            <Link href="/nlg-legal-disclaimer">NLG Legal Disclaimer</Link>
           </h4>
         </div>
       </div>

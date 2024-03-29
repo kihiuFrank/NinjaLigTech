@@ -59,7 +59,7 @@ const GamingBanner = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 space-x-1">
           <div className="col-span-6  flex justify-center">
             <img
-              src="/assets/gaming/ninjatechgaming/NinjatechGamingVerticalGradient.svg"
+              src="/assets/gaming/ninjalig/vertical/Ninjatech_Gaming_vertical_gradient.png"
               alt="nothing"
               className=" w-2/3 md:w-1/2 lg:w-3/4  h-auto"
             />
@@ -70,7 +70,7 @@ const GamingBanner = () => {
               Reimagining the way people Game.
             </h1>
             <h2 className="text-charcoal text-xs lg:text-sm font-normal text-start lg:text-start opacity-75 pt-4 lg:pt-2">
-              NinjaTech Gaming (NTG) is the leading platform for online
+              Ninjalig Gamers (NLG) is the leading platform for online
               competitive games where we provide excellent support and
               competitive environments for all our players. We are home to 300+
               gamers and over 7 gaming groups, each dedicated to bring together

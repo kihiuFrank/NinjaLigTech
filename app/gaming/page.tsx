@@ -1,6 +1,6 @@
 import React from "react";
 import Games from "@/components/Games/index";
-import Disclaimer from "../ntg-legal-disclaimer/page";
+import Disclaimer from "../nlg-legal-disclaimer/page";
 import Link from "next/link";
 import Image from "next/image";
 import GamingBanner from "@/components/GamingBanner";
@@ -48,7 +48,7 @@ const page = () => {
                 Prizes.
               </h1>
               <h2 className="text-charcoal text-xs lg:text-sm font-normal text-start opacity-75 pt-2 lg:pt-0">
-                Cash prizes are determined by the NinjaTech Gaming team
+                Cash prizes are determined by the Ninjalig Gamers team
                 depending on the number of subscribers in a tournament.
                 <br /> <br />
                 If you subscribe for a tournament and you don&apos;t win any
